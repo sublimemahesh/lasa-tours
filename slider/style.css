@@ -1,0 +1,142 @@
+  
+img {
+	border: none;
+	max-width: 100%;
+}
+ 
+
+
+/* ========= BUTTON =========*/
+
+.mu-primary-btn {
+	background-color: #0091ea;
+	color: #fff;
+	display: inline-block;
+	font-size: 18px;
+	padding: 15px 70px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 25px;
+}
+
+.mu-primary-btn:hover,
+.mu-primary-btn:focus {
+	color: #fff;
+}
+
+
+.mu-send-msg-btn {
+	color: #555;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 12px 20px;
+	margin-top: 10px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	width: 170px;
+	color: #fff;
+	border-radius: 20px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.mu-send-msg-btn:hover,
+.mu-send-msg-btn:focus {
+	background-color: #fff;
+}
+ 
+
+
+
+.mu-navbar-nav .dropdown-menu {
+	left: auto;
+	right: 0;
+}
+
+.mu-navbar-nav li .dropdown-menu a {
+	color: #444;
+	padding: 6px 15px;
+}
+
+.mu-navbar-nav li .dropdown-menu a:hover,
+.mu-navbar-nav li .dropdown-menu a:focus {
+	color: #0091ea;
+}
+
+
+/*--------------------*/
+/* SLIDER */
+/*--------------------*/
+
+ 
+
+.mu-single-slide {
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+.mu-single-slide:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0.8;
+	z-index: 10;
+}
+
+.mu-single-slide-content-area {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 99;
+	padding: 12% 16%;
+}
+
+.mu-single-slide-content {
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+.mu-single-slide-content h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 58px;
+	margin-bottom: 30px;
+}
+
+.mu-single-slide-content p {
+	color: #fff;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+.mu-single-slide-content a {
+	margin-top: 30px;
+}
+
+.mu-slide .slick-prev:hover,
+.mu-slide .slick-prev:focus,
+.mu-slide .slick-next:hover,
+.mu-slide .slick-next:focus {
+    color: #0091ea;
+}
+.mu-slide .slick-prev:hover:before,
+.mu-slide .slick-prev:focus:before,
+.mu-slide .slick-next:hover:before,
+.mu-slide .slick-next:focus:before {
+    color: #0091ea;
+}
+            
+
+ 

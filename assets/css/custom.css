@@ -1,0 +1,76 @@
+.footer-background {
+    background-image: url(../images/bg/reviewbg.jpg);
+}
+.footer-widgets {
+    padding: 50px 0px !important;
+}
+footer .widget p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+footer .widget ul a {
+    display: block;
+    text-align: left;
+    color: #fff;
+}
+footer .widget ul {
+    list-style: none;
+    padding-left: 0px;
+    font-size: 16px;
+    color: #fff;
+}
+.footer-widgets .widget h4 {
+    text-transform: uppercase;
+    color: #fff;
+}
+.st-icon{
+    margin-left: 20px;
+}
+.icon-header{
+    font-size: 20px;
+    margin-right: 5px;
+}    
+.full-width {
+    width: 100% !important;
+    height: 300px;
+}
+.contactmap-bottom{
+    margin-bottom: 50px;
+}
+header .pull-right {
+    float: right;
+    color: #fff;
+}
+header .widget ul i {
+    font-size: 29px;
+    display: inline-block;
+    color: #62ac1e;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 3px;
+}
+.col-margin {
+    margin-bottom: 20px;
+}
+.img-top {
+    top: 10px;
+}
+.onStep {
+    opacity: 0;
+    overflow: hidden !important;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 44%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 32px;
+    color: #000;
+}
