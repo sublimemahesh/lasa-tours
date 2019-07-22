@@ -417,7 +417,7 @@ var prealoaderOption = $(window);
                     "items":1
                 },
                 "480":{
-                    "items":3
+                    "items":1
                 },
                 "768":{
                     "items":2

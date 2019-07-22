@@ -83,9 +83,11 @@ $TOUR_DATE = new TourDate(NULL);
 
 
 
+
                         foreach ($TOUR_PACKAGE->getTourPackagesByType($id) as $tour_package) {
 
                             $Dates = count($TOUR_DATE->getTourDatesById($tour_package['id']));
+
                             ?>
                             <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 grid-item cat-2 cat-4">
                                 <div class="product-thumb">
@@ -97,11 +99,13 @@ $TOUR_DATE = new TourDate(NULL);
                                             </div>
                                             <div class="matters  ">
                                                 <p><?php
+
                                                     if ($Dates === 1) {
                                                         echo 'One Day';
                                                     } else {
                                                         echo $Dates.' Days';
                                                     }
+
                                                     ?></p>
                                             </div>
                                         </div>
@@ -109,8 +113,24 @@ $TOUR_DATE = new TourDate(NULL);
                                     <div class="caption">
                                         <div class="inner">
                                             <a href="view-tour.php?id=<?php echo $tour_package['id'] ?>">  
-                                                <h4 class="color-black"><?php echo $tour_package['title'] ?></h4> </a>
-                                            <p class="text-justify"><?php echo $tour_package['short_description'] ?>...</p>
+
+                                                <h4 class="color-black">
+                                                    <?php
+                                                    $letters = strlen($tour_package["title"]);
+                                                    if ($letters > 20) {
+                                                        ?>
+                                                        <?php echo substr($tour_package["title"], 0, 15) . '....'; ?>
+                                                        <?php
+                                                    } else {
+                                                        ?>
+                                                        <?php echo $tour_package['title'] ?>
+                                                        <?php
+                                                    }
+                                                    ?>
+                                                </h4> 
+                                            </a>
+                                            <p class="text-justify"><?php echo substr($tour_package['short_description'], 0, 150) . '...'; ?></p>
+
                                         </div>
                                         <div class="text-left">
                                             <div class="border-left-btm col-md-12 no-padding no-padding padding_none">
@@ -127,7 +147,7 @@ $TOUR_DATE = new TourDate(NULL);
                                     </div>
                                 </div>
                             </div>
-                        <?php } ?>
+<?php } ?>
                     </div>
 
                 </div>

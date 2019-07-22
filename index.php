@@ -153,7 +153,7 @@ $ABOUT_US = new Page(1);
                             <a href="about.php" class="rbutton transparent">View More</a>  
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12 img-full-width">
+                    <div class="col-md-6 col-sm-12 img-full-width about-img-top">
                         <img alt="image" src="assets/images/journey.jpg">
                     </div>
                 </div>
@@ -339,7 +339,7 @@ $ABOUT_US = new Page(1);
                             }
                         }
                         ?>
-                         <div class="col-md-12 "  > 
+                         <div class="col-md-12 btn-right"  > 
                              <a href="things-to-do.php" class=" btn btn-warning pull-right">View All</a>
                       
                     </div>
