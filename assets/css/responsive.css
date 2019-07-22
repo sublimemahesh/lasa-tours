@@ -448,7 +448,7 @@ Version      : 1.0
     }
 
     .logo img {
-        width: 150px;
+        width: 110px;
         height: 35px;
     }
     .menu-bg .logo img {
@@ -2511,5 +2511,8 @@ Version      : 1.0
     }
     .product-thumb .image .matters p {
         margin: 9px 95px 0px;
+    }
+    .des-content-bottom{
+        margin-bottom: 60px;
     }
 }
