@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="widget">
-                    <img alt="image" src="assets/images/flogo.png">
+                    <img alt="image" src="assets/images/logo.png">
                     <p>Travelers are always discoverers, especially those who travel by air. There are no signposts in the sky to show a man has passed that way before. There are no channels marked. The flier breaks each second into new uncharted seas.</p>
                 </div>
             </div>
@@ -55,7 +55,6 @@
                         </li>
                         <li>
                             <i class="fa fa-phone" aria-hidden="true"></i>(+94) 77 256 8596
-                            <br/> (+94) 77 256 8596
                         </li>
                         <li>
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>

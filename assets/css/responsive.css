@@ -197,7 +197,7 @@ Version      : 1.0
     }
 
     .menu-bg .navbar-collapse {
-/*        background: #000;*/
+        /*        background: #000;*/
     }
     .menu-bg .mainmenu .navbar-nav li a:hover {
         color: #ccc;
@@ -267,6 +267,8 @@ Version      : 1.0
     }
     .footer-area {
         padding: 50px 0px 0;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .section-padding {
         padding: 40px 0px;
@@ -447,6 +449,10 @@ Version      : 1.0
 
     .logo img {
         width: 150px;
+        height: 35px;
+    }
+    .menu-bg .logo img {
+        margin-top: -10px;
     }
     .offer {
         position: relative;
@@ -467,15 +473,21 @@ Version      : 1.0
         padding:25px 0;
         text-align: center;
     }
-
+    .contentBanner-right .contentBanner_content {
+        padding: 25px 0 !important;
+    }
+    .contentBanner-right {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .testi-details .social-icon-c {
         position: relative;
         display: inline-block;
         font-size: 48px;
     }
     .overlay-offer {
-       
-         background: linear-gradient( #ff06 , #ff000061);
+
+        background: linear-gradient( #ff06 , #ff000061);
         color: #fff;
         position: absolute;
         width: 100%;
@@ -496,7 +508,7 @@ Version      : 1.0
     .overlay-offer h2 {
         line-height: 20px;
         padding: 0px 10px;
-        font-size: 45px;
+        font-size: 40px;
         margin-top: 130px;
     }
     .aboutfeature li {
@@ -793,6 +805,9 @@ Version      : 1.0
     }
     .header5 .navbar-header .navbar-toggle{
         margin-top: 15px;
+    }
+    .contentBanner_image:hover {
+        background: none;
     }
 }
 
@@ -1228,7 +1243,7 @@ Version      : 1.0
         width: 17.17%;
     }
     .menu-bg .mainmenu .navbar-nav>li{
-        padding: 30px 8px;
+        padding: 30px 0px;
     }
     .menu-bg .mainmenu .popup>li{
         padding: 40px 0;
@@ -2130,7 +2145,7 @@ Version      : 1.0
         font-size: 12px;
     }
     .logo img{
-        margin-top: 50px; 
+        margin-top: 70px; 
     }
     .responsive-center{
         text-align: center;
@@ -2284,7 +2299,7 @@ Version      : 1.0
         margin: 0;
     }
     .navbar-toggler{
-        top: -50px;
+        top: -30px;
         color: black;
     }
 }
@@ -2356,6 +2371,15 @@ Version      : 1.0
     .columns-6-1>ul.products>li.product .thumbnails>a, .section-onsale-product .columns-6-1>ul.products>.onsale-product .thumbnails>a, .section-onsale-product-carousel .onsale-product-carousel .onsale-product .columns-6-1>ul.products>.onsale-product-content .thumbnails>a, .products-carousel .owl-item .columns-6-1>ul.products>.product .thumbnails>a{
         margin-right: 0;
         margin-left: 3px;
+    }
+    .cusreview-ltextimg {
+        width: 320px !important;
+    }
+    .about-img-top{
+        margin-top: 10px;
+    }
+    .btn-right{
+        margin-right: 35%;
     }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
@@ -2450,5 +2474,42 @@ Version      : 1.0
         text-align: center;
         float: none;
         background-color: #fff;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .contentBanner-right {
+        padding-left: 0px;
+        padding-right: 20px !important;
+    }
+    .overlay-offer h2 {
+        line-height: 24px;
+        padding: 0px 10px;
+        font-size: 24px;
+        margin-top: 40px;
+    }
+}
+@media (min-width: 1025px){
+    .menu-bg .mainmenu .navbar-nav>li{
+        padding: 30px 5px;
+    }
+    .mainmenu .navbar-nav > li {
+        padding: 22px 5px;
+    }
+}
+@media (min-width: 994px) and (max-width: 1199px){
+    .overlay-offer h2 {
+        margin-top: 40%;
+    }
+    .product-thumb .image .matter p {
+        margin: 9px 100px 0px;
+    }
+    .grid figure {
+        width: 290px;
+    }
+    .product-thumb .caption .inner h4 {
+        font-size: 22px;
+    }
+    .product-thumb .image .matters p {
+        margin: 9px 95px 0px;
     }
 }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include './class/include.php'; 
+include './class/include.php';
 ?>
 <html lang="en">
 
@@ -46,7 +46,7 @@ include './class/include.php';
     </head>
 
     <body>
-         
+
         <?php
         include 'header.php';
         ?>
@@ -73,36 +73,51 @@ include './class/include.php';
             <div class="container">
                 <div class="gallery-items-5-2">
                     <div class="row">
-                        <?php 
+                        <?php
                         $ACTIVITY = new Activities(NULL);
-                        foreach ($ACTIVITY->all() as $activity ){
-                        ?>
-                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 grid-item cat-2 cat-4">
-                            <div class="product-thumb">
-                                <a href="view-things-to-do.php?id=<?php echo $activity['id']?>">  <div class="image">
-                                        <img src="upload/activity/<?php echo $activity['image_name']?>"   class="img-responsive" />
-                                        <div class="hoverbox link-center">
-                                            <div class="icon_plus" aria-hidden="true"></div>
-                                        </div> 
-                                    </div>
-                                </a>
-                                <div class="caption">
-                                    <div class="inner">
-                                        <a href="view-things-to-do.php?id=<?php echo $activity['id']?>"><h4 class="color-black"><?php echo $activity['title']?></h4> </a>
-                                        <p class="text-justify">
-                                               <?php echo substr($activity['short_description'],0,150)?>...
-                                        </p>
-                                    </div>
-                                    <div class="text-left">
-                                        <div class="border-left-btm col-md-12 no-padding padding_none">  
-                                            <div class=" text-center no-padding padding_none">
-                                                <a href="view-things-to-do.php?id=<?php echo $activity['id']?>">   <button type="button"  >View More </button></a>
+                        foreach ($ACTIVITY->all() as $activity) {
+                            ?>
+                            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 grid-item cat-2 cat-4">
+                                <div class="product-thumb">
+                                    <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>">  <div class="image">
+                                            <img src="upload/activity/<?php echo $activity['image_name'] ?>"   class="img-responsive" />
+                                            <div class="hoverbox link-center">
+                                                <div class="icon_plus" aria-hidden="true"></div>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                    <div class="caption">
+                                        <div class="inner">
+                                            <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>">
+                                                <h4 class="color-black">
+                                                    <?php
+                                                    $letters = strlen($activity["title"]);
+                                                    if ($letters > 20) {
+                                                        ?>
+                                                        <?php echo substr($activity["title"], 0, 15) . '....'; ?>
+                                                        <?php
+                                                    } else {
+                                                        ?>
+                                                        <?php echo $activity['title'] ?>
+                                                        <?php
+                                                    }
+                                                    ?>
+                                                </h4> 
+                                            </a>
+                                            <p class="text-justify">
+                                                <?php echo substr($activity['short_description'], 0, 150) ?>...
+                                            </p>
+                                        </div>
+                                        <div class="text-left">
+                                            <div class="border-left-btm col-md-12 no-padding padding_none">  
+                                                <div class=" text-center no-padding padding_none">
+                                                    <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>">   <button type="button"  >View More </button></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div> 
+                            </div> 
                         <?php } ?>
                     </div> 
                 </div>

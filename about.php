@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 include './class/include.php';
-$ABOUT_US = new Page(1);
+$ABOUT_US = new Page(2);
 ?>
 <html lang="en">
 
@@ -47,7 +47,7 @@ $ABOUT_US = new Page(1);
     </head>
 
     <body>
-        
+
         <!-- START HEADER AREA -->
         <?php
         include 'header.php';
@@ -81,9 +81,9 @@ $ABOUT_US = new Page(1);
                             </div>
                         </div>
                         <p>
-                              <?php echo $ABOUT_US->description ?>      
+                            <?php echo $ABOUT_US->description ?>      
                         </p>
-                         
+
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <img alt="image" src="assets/images/about.jpg">
@@ -101,7 +101,10 @@ $ABOUT_US = new Page(1);
                             <div class="service-icon"><i class="fa fa-eye" aria-hidden="true"></i>
                             </div>
                             <h4>Our vision</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            <p>Sri Lanka Lasa Tours, Sri Lanka refrains from promoting activities or experiences which have an adverse
+                                impact on the environment. Through our efforts in living up to the expectations of our clients by
+                                providing enriching holidays of the highest standards, we are moving towards becoming one of the
+                                leading tour operators.</p>
                         </div>
                     </div>
                     <!-- / END SINGLE SERVICE DESIGN AREA -->
@@ -111,7 +114,8 @@ $ABOUT_US = new Page(1);
                             <div class="service-icon"><i class="fa fa-cubes" aria-hidden="true"></i>
                             </div>
                             <h4>Our Mission</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            <p>We will combine our vast expertise, excellent value for money and supreme service with the magic that
+                                Sri Lanka has to offer into a unique and unforgettable experience.</p>
                         </div>
                     </div>
                     <!-- / END SINGLE SERVICE DESIGN AREA -->
@@ -121,7 +125,10 @@ $ABOUT_US = new Page(1);
                             <div class="service-icon"><i class="fa fa-archive" aria-hidden="true"></i>
                             </div>
                             <h4>Our Values</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            <p>Professional private guide</p>
+                            <p>Comfortable Vehicles</p>
+                            <p>Expertise Drivers</p>
+                            <p>Russian Guide</p>
                         </div>
                     </div>
                 </div>
