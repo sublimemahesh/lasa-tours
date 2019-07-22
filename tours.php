@@ -4,6 +4,7 @@ include './class/include.php';
 $id = '';
 $id = $_GET['id'];
 $TOUR_TYPES = new TourType($id);
+$TOUR_DATE = new TourDate(NULL);
 ?>
 <html lang="en">
 
@@ -49,7 +50,7 @@ $TOUR_TYPES = new TourType($id);
     </head>
 
     <body>
-        
+
         <!-- START HEADER AREA -->
         <?php
         include 'header.php';
@@ -77,38 +78,48 @@ $TOUR_TYPES = new TourType($id);
             <div class="container">
                 <div class="gallery-items-5-2">
                     <div class="row">
-                        <?php 
-                       $TOUR_PACKAGE =new TourPackage(NULL);
-                        foreach ($TOUR_PACKAGE->getTourPackagesByType($id) as $tour_package) { ?>
+                        <?php
+                        $TOUR_PACKAGE = new TourPackage(NULL);
+
+
+
+                        foreach ($TOUR_PACKAGE->getTourPackagesByType($id) as $tour_package) {
+
+                            $Dates = count($TOUR_DATE->getTourDatesById($tour_package['id']));
+                            ?>
                             <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 grid-item cat-2 cat-4">
                                 <div class="product-thumb">
-                                    <a href="view-tour.php?id=<?php echo $tour_package['id']?>">  
+                                    <a href="view-tour.php?id=<?php echo $tour_package['id'] ?>">  
                                         <div class="image">
-                                            <img src="upload/tour-package/<?php echo $tour_package['image_name']?>"    class="img-responsive" />
+                                            <img src="upload/tour-package/<?php echo $tour_package['image_name'] ?>"    class="img-responsive" />
                                             <div class="hoverbox link-center">
                                                 <div class="icon_plus" aria-hidden="true"></div>
                                             </div>
                                             <div class="matters  ">
                                                 <p><?php
-                                                $TOUR_TYPE = new TourType($tour_package['tour_type']);
-                                                echo $TOUR_TYPE->name?></p>
+                                                    if ($Dates === 1) {
+                                                        echo 'One Day';
+                                                    } else {
+                                                        echo $Dates.' Days';
+                                                    }
+                                                    ?></p>
                                             </div>
                                         </div>
                                     </a>
                                     <div class="caption">
                                         <div class="inner">
-                                            <a href="view-tour.php?id=<?php echo $tour_package['id']?>">  
-                                                <h4 class="color-black"><?php echo $tour_package['title']?></h4> </a>
-                                            <p class="text-justify"><?php echo $tour_package['short_description']?>...</p>
+                                            <a href="view-tour.php?id=<?php echo $tour_package['id'] ?>">  
+                                                <h4 class="color-black"><?php echo $tour_package['title'] ?></h4> </a>
+                                            <p class="text-justify"><?php echo $tour_package['short_description'] ?>...</p>
                                         </div>
                                         <div class="text-left">
                                             <div class="border-left-btm col-md-12 no-padding no-padding padding_none">
                                                 <div class="row">
                                                     <div class="col-md-6 col-sm-6 col-xs-6 no-padding padding_none">
-                                                        <a href="booking.php?id=<?php echo $tour_package['id']?>">    <button type="button"  >Book Now </button></a>
+                                                        <a href="booking.php?id=<?php echo $tour_package['id'] ?>">    <button type="button"  >Book Now </button></a>
                                                     </div>
                                                     <div class="col-md-6 col-sm-6 col-xs-6 no-padding padding_none">
-                                                       <a href="view-tour.php?id=<?php echo $tour_package['id']?>">   <button type="button">View More </button></a>
+                                                        <a href="view-tour.php?id=<?php echo $tour_package['id'] ?>">   <button type="button">View More </button></a>
                                                     </div>
                                                 </div>
                                             </div> 
