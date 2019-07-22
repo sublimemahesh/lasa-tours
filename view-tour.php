@@ -83,26 +83,26 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                             $key++;
                             ?>
                             <div class="row" style="padding-top: 20px;">  
-                                <div class="col-md-1 col-sm-1 day_1 no-padding">
+<!--                                <div class="col-md-1 col-sm-1 day_1 no-padding">
                                     <div class="date-box">
                                         <h2 class="Default-clr"><?php echo $key ?></h2>
                                         <div class="default-bg"></div>
                                     </div>
-                                </div>  
+                                </div>  -->
 
                                 <div class="col-md-11" style=" ; margin-top: 5px;">
-                                    <h3><?php echo $tour_date['title'] ?></h3> 
+                                    <h3 class="tour-day"><?php echo $tour_date['title'] ?></h3> 
                                 </div>
                             </div>
-                            <div class="row" style="padding-top: 20px;">
+                            <div class="row view-tour" style="">
                                 <div class="col-md-12">
-                                    <p class="text-justify">
+                                  
                                         <?php echo $tour_date['description'] ?>
-                                    </p>
+                                   
                                 </div>
                             </div>
 
-                            <div class="row">
+                            <div class="row tour-day-imgs">
                                 <?php
                                 $TOUR_DATE_PHOTO = new TourDatePhoto(NULL);
                                 foreach ($TOUR_DATE_PHOTO->getTourDatePhotosById($tour_date['id']) as $tour_date) {
@@ -151,7 +151,7 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                     </div>
                 </div>
 
-                <!-- Map -->
+<!--                 Map 
                 <div class="contactmap contactmap-bottom contact-padd-top"  >
                     <div class="row">
                         <div class="col-12">
@@ -161,8 +161,8 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                             </div>
                         </div>
                     </div>
-                    <!-- //Map -->
-                </div>
+                     //Map 
+                </div>-->
             </div>
 
         </section>

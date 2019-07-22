@@ -74,3 +74,23 @@ header .widget ul i {
     font-size: 32px;
     color: #000;
 }
+
+.view-tour strong{
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    color: #222;
+    font-family: "Rubik", sans-serif;
+}
+.tour-day{
+    color: #0f783d;
+   
+}
+.tour-day-imgs{
+     margin-bottom: 40px;
+}
+.tour-day-imgs{
+     margin-bottom: 40px;
+}
+.view-tour p{
+    text-align: justify;
+}
