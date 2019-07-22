@@ -288,7 +288,7 @@ $ABOUT_US = new Page(1);
                             if ($key < 6) {
                                 if ($key % 2 == 0) {
                                     ?>
-                                    <div class="col-md-6 col-sm-6 text-left content-banner-lite delay-1 appear" data-control="UI002_Content_Banner_lite"  >
+                                    <div class="col-md-6 col-sm-6 text-left content-banner-lite delay-1 appear des-content-bottom" data-control="UI002_Content_Banner_lite"  >
                                         <div class="contentBanner contentBanner-left">
                                             <a href="view-things-to-do.php?id=<?php echo $attraction['id'] ?>">  
                                                 <div class="contentBanner_image">
