@@ -2426,6 +2426,38 @@ Version      : 1.0
         margin-top: 100px;
     }
 }
+
+@media (min-width: 569px) and (max-width: 700px){
+    .top-bar-row {
+        margin-top: -35px ! important;
+    }
+    .navbar-toggler {
+        top: -35px;
+    }
+    button, input[type="button"].button, a.button {
+        color: #000;
+    }
+    .logo img {
+        margin-top: -25px;
+    }
+}
+@media (min-width: 701px) and (max-width: 767px){
+    .top-bar-row {
+        margin-top: -35px ! important;
+    }
+    .navbar-toggler {
+        top: -35px;
+        right: -75px;
+    }
+    button, input[type="button"].button, a.button {
+        color: #000;
+    }
+    .logo img {
+        margin-top: -25px;
+        margin-left: -75px;
+    }
+}
+
 @media (max-width: 768px){
     .header-top-area.menu-bg{
         position: fixed;
@@ -2473,8 +2505,26 @@ Version      : 1.0
     .mainmenu .navbar-nav {
         text-align: center;
         float: none;
-        background-color: #fff;
+        /*        background-color: #fff;*/
     }
+    .slick-next {
+        width: 25px ! important;
+        height: 25px ! important;
+    }
+    .slick-prev {
+        width: 25px ! important;
+        height: 25px ! important;
+    }
+    .slick-prev::before, .slick-next::before {
+        font-size: 18px ! important;
+    }
+    .sidepanel a {
+        font-size: 18px ! important;
+    }
+    /*    .slick-slide {
+            margin-top: 65px;
+    
+        }*/
 }
 @media (min-width: 576px) and (max-width: 767px){
     .contentBanner-right {
