@@ -54,41 +54,51 @@
                                 </button>
                                 <div id="mySidepanel" class="sidepanel">
                                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                                    <a href="#">About</a>
-                                    <a href="#">Services</a>
-                                    <a href="#">Clients</a>
-                                    <a href="#">Contact</a>
+                                    <a href="./">Home</a>
+                                    <a href="about.php">About Us</a>
+                                    <a href="service.php">Services</a>
+                                    <a href="#" class="dropdown-menu">Tours</a>
+                                    <?php
+                                    $TOUR_TYPE = new TourType(NULL);
+                                    foreach ($TOUR_TYPE->all() as $tour_type) {
+                                        ?>
+                                        <a href="tours.php?id=<?php echo $tour_type['id'] ?>"><?php echo $tour_type['name'] ?></a>
+                                    <?php } ?>
+                                    <a href="things-to-do.php">Things To Do</a>
+                                    <a href="destinations.php">Destinations</a>
+                                    <a href="gallery.php">Gallery</a>  
+                                    <a href="contact.php">Contact Us</a>  
                                 </div>
-                                <!--                            <div class="navbar-collapse collapse no-padding" id="collapse-mainmenu">
-                                                                <ul class="nav navbar-nav glrnav">
-                                                                    <li><a href="./">Home <span class="caret"></span></a>
-                                                                    </li>
-                                                                    <li><a href="about.php">About Us <span class="caret"></span></a>
-                                                                    <li><a href="service.php">Service <span class="caret"></span></a>
-                                                                    </li>
-                                                                    <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Tours<span class="caret"></span></a>
-                                                                        <ul class=" dropdown-menu">
-                                <?php
-                                $TOUR_TYPE = new TourType(NULL);
-                                foreach ($TOUR_TYPE->all() as $tour_type) {
-                                    ?>
-                                                                                    <li><a href="tours.php?id=<?php echo $tour_type['id'] ?>"><?php echo $tour_type['name'] ?></a></li>
-                                <?php } ?>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li><a href="things-to-do.php">Things to Do <span class="caret"></span></a>
-                                                                    </li>
-                                                                    <li><a href="destinations.php">Destinations <span class="caret"></span></a>
-                                                                    </li>
-                                                                    <li><a href="gallery.php">Gallery<span class="caret"></span></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="contact.php">Contact Us <span class="caret"></span></a>
-                                                                    </li>
-                                
-                                
-                                                                </ul>
-                                                            </div>-->
+                                <div class="navbar-collapse collapse no-padding" id="collapse-mainmenu">
+                                    <ul class="nav navbar-nav glrnav">
+                                        <li><a href="./">Home <span class="caret"></span></a>
+                                        </li>
+                                        <li><a href="about.php">About Us <span class="caret"></span></a>
+                                        <li><a href="service.php">Service <span class="caret"></span></a>
+                                        </li>
+                                        <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Tours<span class="caret"></span></a>
+                                            <ul class=" dropdown-menu">
+                                                <?php
+                                                $TOUR_TYPE = new TourType(NULL);
+                                                foreach ($TOUR_TYPE->all() as $tour_type) {
+                                                    ?>
+                                                    <li><a href="tours.php?id=<?php echo $tour_type['id'] ?>"><?php echo $tour_type['name'] ?></a></li>
+                                                <?php } ?>
+                                            </ul>
+                                        </li>
+                                        <li><a href="things-to-do.php">Things to Do <span class="caret"></span></a>
+                                        </li>
+                                        <li><a href="destinations.php">Destinations <span class="caret"></span></a>
+                                        </li>
+                                        <li><a href="gallery.php">Gallery<span class="caret"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.php">Contact Us <span class="caret"></span></a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
                             </nav>
                         </div>
                         <!-- END MENU DESIGN AREA -->
