@@ -45,6 +45,7 @@ $ABOUT_US = new Page(1);
         <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="slider/slick.css" rel="stylesheet" type="text/css"/>
         <link href="slider/style.css" rel="stylesheet" type="text/css"/>
+    
     </head>
 
     <body>
@@ -256,9 +257,9 @@ $ABOUT_US = new Page(1);
                         </div> 
                     </div>  
                 </section> 
-               <div class="row">
+                <div class="row">
                     <div class="col-md-12 contact-padd-top-2"  >                         
-                             <a href="things-to-do.php" class=" btn btn-warning pull-right ">View All</a>                         
+                        <a href="things-to-do.php" class=" btn btn-warning pull-right ">View All</a>                         
                     </div> 
                 </div>    
             </div> 
@@ -339,12 +340,12 @@ $ABOUT_US = new Page(1);
                             }
                         }
                         ?>
-                         <div class="col-md-12 btn-right"  > 
-                             <a href="things-to-do.php" class=" btn btn-warning pull-right">View All</a>
-                      
-                    </div>
+                        <div class="col-md-12 btn-right"  > 
+                            <a href="things-to-do.php" class=" btn btn-warning pull-right">View All</a>
+
+                        </div>
                     </div>  
-                      
+
                 </div> 
             </div>
         </section>
@@ -467,6 +468,8 @@ $ABOUT_US = new Page(1);
                         console.log(e);
                     });
         });
+
+      
     </script>
 </body>
 
