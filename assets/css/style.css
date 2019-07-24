@@ -6445,7 +6445,7 @@ header .social-icon ul li a {
 }
 
 .product-thumb .caption .inner h4 {
-    font-size: 24px;
+    font-size: 20px;
     margin: 0 0 8px;
 }
 
@@ -14800,7 +14800,7 @@ span.coln {
     font-size: 13px;
 }
 
-.social li a {
+/*.social li a {
     border: 1px solid #ffffff;
     display: block;
     width: 30px;
@@ -14808,7 +14808,7 @@ span.coln {
     text-align: center;
     color: #ffff;
     line-height: 2;
-}
+}*/
 
 .social li a:hover {
     border-color: transparent;

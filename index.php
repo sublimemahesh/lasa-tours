@@ -98,7 +98,7 @@ $ABOUT_US = new Page(1);
             <div class="container">
                 <div class="row">                    
 
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-3 col-sm-4">
                         <a href="tours.php?id=1"> 
                             <div class="offer">
                                 <img alt="image" src="assets/images/services/oneday.jpg">
@@ -108,9 +108,20 @@ $ABOUT_US = new Page(1);
                             </div> 
                         </a>
                     </div>
+                    
+                    <div class="col-md-3 col-sm-4">
+                        <a href="tours.php?id=3"> 
+                            <div class="offer">
+                                <img alt="image" src="assets/images/services/2.jpg">
+                                <div class="overlay-offer">
+                                    <h2 class="text-shadow">Two Day Tours </h2> 
+                                </div>
+                            </div> 
+                        </a>
+                    </div>
 
 
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-3 col-sm-4">
                         <a href="tours.php?id=2"> 
                             <div class="offer">
                                 <img alt="image" src="assets/images/services/round.jpg">
@@ -121,7 +132,7 @@ $ABOUT_US = new Page(1);
                         </a>
                     </div>
 
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-3 col-sm-4">
                         <a href="service.php"> 
                             <div class="offer">
                                 <img alt="image" src="assets/images/services/service.jpg">
@@ -178,7 +189,10 @@ $ABOUT_US = new Page(1);
                 <div class="testimonial-list owl-carousel">
                     <?php
                     $TOUR_PACKAGE = new TourPackage(NULL);
-                    foreach ($TOUR_PACKAGE->all() as $tour_package) {
+                    foreach ($TOUR_PACKAGE->all() as $key => $tour_package) {
+                         if ($key > 5) {
+                               break;
+                         }
                         ?>
                         <div class="single-testimonial item responsive_none">
 
@@ -213,7 +227,10 @@ $ABOUT_US = new Page(1);
                                 </div>
                             </div> 
                         </div>
-                    <?php } ?> 
+                    <?php 
+                         
+                    }
+                    ?> 
                 </div>  
             </div>
         </section>
