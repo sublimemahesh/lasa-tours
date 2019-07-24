@@ -22,7 +22,7 @@
                         <ul class="top-bar ">
                             <li class=" pull-right   m-top-2"  >
                                 <h6 class="color-black"><i class="fa fa-phone" aria-hidden="true"></i> 
-                                    (+94) 77 256 8596
+                                    <a href="tel:(+94) 77 688 1171">(+94) 77 688 1171</a>
                                 </h6>
                             </li> 
 

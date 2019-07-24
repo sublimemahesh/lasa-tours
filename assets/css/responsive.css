@@ -470,11 +470,11 @@ Version      : 1.0
     }
     .contentBanner-left .contentBanner_content {
         float: center;
-        padding:25px 0;
+        padding:25px 8px;
         text-align: center;
     }
     .contentBanner-right .contentBanner_content {
-        padding: 25px 0 !important;
+        padding: 25px 18px !important;
     }
     .contentBanner-right {
         padding-left: 0px;
@@ -1562,6 +1562,9 @@ Version      : 1.0
     .shop-checkout .about-banner .about-banner-destop .banner-img {
         height: 260px;
     }
+    .product-thumb .image .matter p {
+        margin: 0 25px 0px ! important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -2521,10 +2524,24 @@ Version      : 1.0
     .sidepanel a {
         font-size: 18px ! important;
     }
+    .blog-area {
+        padding: 0px;
+    }
+    footer .widget ul.footer-addres li {
+        padding-left: 0px;
+    }
+    .full-width {
+        height: 150px;
+    }
     /*    .slick-slide {
             margin-top: 65px;
     
         }*/
+}
+@media (min-width: 376px) and (max-width: 405px){
+    .cusreview-ltextimg {
+    width: 340px !important;
+}
 }
 @media (min-width: 576px) and (max-width: 767px){
     .contentBanner-right {
@@ -2564,5 +2581,21 @@ Version      : 1.0
     }
     .des-content-bottom{
         margin-bottom: 60px;
+    }
+}
+@media (min-width:992px) and (max-width:1279px){
+    .hidden-md{display:none!important
+    }
+}
+@media (min-width:1280px) and (max-width:1440px){
+    .hidden-lg{display:none!important
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .hidden-sm{display:none!important
+    }
+}
+@media (max-width:767px){
+    .hidden-xs{display:none!important
     }
 }

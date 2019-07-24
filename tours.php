@@ -98,15 +98,7 @@ $TOUR_DATE = new TourDate(NULL);
                                                 <div class="icon_plus" aria-hidden="true"></div>
                                             </div>
                                             <div class="matters  ">
-                                                <p><?php
-
-                                                    if ($Dates === 1) {
-                                                        echo 'One Day';
-                                                    } else {
-                                                        echo $Dates.' Days';
-                                                    }
-
-                                                    ?></p>
+                                                <p><?php echo $tour_package['dates'] ?></p>
                                             </div>
                                         </div>
                                     </a>

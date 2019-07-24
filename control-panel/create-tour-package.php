@@ -87,10 +87,10 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12 hidden">
+                                    <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" id="dates" class="form-control" autocomplete="off" name="dates" value="1" >
+                                                <input type="text" id="dates" class="form-control" autocomplete="off" name="dates">
                                                 <label class="form-label">Stay Dates</label>
                                             </div>
                                         </div>

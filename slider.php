@@ -15,7 +15,7 @@
                             <div class="col-md-12">
                                 <div class="mu-single-slide-content" style="margin-top: 290px;">
                                     <h1 style="text-shadow: 0 2px 5px rgba(0, 0, 0, .5)"><?php echo $slider['title'] ?></h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+                                    <p><?php echo $slider['description'] ?></p>
                                    
                                 </div>
                             </div>

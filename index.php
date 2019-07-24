@@ -84,7 +84,7 @@ $ABOUT_US = new Page(1);
                                     </div>
                                 </div>
                                 <div class="guest-rate-inner-section guest-right-section">
-                                    <p>Based on 35503 independent user reviews</p>
+                                    <p>Welcome To Sri Lanka Lasa Tours</p>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ $ABOUT_US = new Page(1);
                     <div class="col-md-4 col-sm-4">
                         <a href="tours.php?id=1"> 
                             <div class="offer">
-                                <img alt="image" src="upload/service//-378466346_190824674560_1563162001_n.jpg"">
+                                <img alt="image" src="assets/images/services/oneday.jpg">
                                 <div class="overlay-offer">
                                     <h2 class="text-shadow">One Day </h2> 
                                 </div>
@@ -113,7 +113,7 @@ $ABOUT_US = new Page(1);
                     <div class="col-md-4 col-sm-4">
                         <a href="tours.php?id=2"> 
                             <div class="offer">
-                                <img alt="image" src="upload/service/-283234893_190919906013_1563160197_n.jpg">
+                                <img alt="image" src="assets/images/services/round.jpg">
                                 <div class="overlay-offer">
                                     <h2 class="text-shadow">Round Tours </h2> 
                                 </div>
@@ -124,7 +124,7 @@ $ABOUT_US = new Page(1);
                     <div class="col-md-4 col-sm-4">
                         <a href="service.php"> 
                             <div class="offer">
-                                <img alt="image" src="upload/service/-413225928_190789914978_1563160029_n.jpg">
+                                <img alt="image" src="assets/images/services/service.jpg">
                                 <div class="overlay-offer">
                                     <h2 class="text-shadow">Services</h2> 
                                 </div>
@@ -190,10 +190,7 @@ $ABOUT_US = new Page(1);
                                             <div class="icon_plus" aria-hidden="true"></div>
                                         </div>
                                         <div class="matter">
-                                            <p><?php
-                                                $TOUR_TYPE = new TourType($tour_package['tour_type']);
-                                                echo $TOUR_TYPE->name
-                                                ?></p>
+                                            <p><?php echo $tour_package['dates'] ?></p>
                                         </div>
                                     </div>
                                 </a>
@@ -302,7 +299,7 @@ $ABOUT_US = new Page(1);
                                                     </h5>
                                                 </a>
                                                 <div class="shortDescription_container text-justify">
-                                                    <?php echo substr($attraction['short_description'], 0, 150) ?>
+                                                    <?php echo substr($attraction['short_description'], 0, 120) . '....' ?>
                                                 </div>
                                                 <div class="cruise-btns pull-right">
                                                     <a href="view-things-to-do.php?id=<?php echo $attraction['id'] ?>" class="rbutton transparent">DETAILS</a>  
@@ -326,7 +323,7 @@ $ABOUT_US = new Page(1);
                                                     </h5>
                                                 </a>
                                                 <div class="shortDescription_container text-justify">
-                                                    <?php echo substr($attraction['short_description'], 0, 150) ?>
+                                                    <?php echo substr($attraction['short_description'], 0, 120) . '....' ?>
                                                 </div>
                                                 <div class="cruise-btns pull-right">
                                                     <a href="view-things-to-do.php?id=<?php echo $attraction['id'] ?>" class="rbutton transparent">DETAILS</a>  
