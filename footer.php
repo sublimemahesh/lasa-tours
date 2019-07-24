@@ -54,7 +54,7 @@
                             <i class="fa fa-map-marker" aria-hidden="true"></i> No 34, Galle Road, Mathara
                         </li>
                         <li>
-                            <i class="fa fa-phone" aria-hidden="true"></i>(+94) 77 256 8596
+                            <i class="fa fa-phone" aria-hidden="true"></i>(+94) 77 688 1171
                         </li>
                         <li>
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>

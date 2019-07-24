@@ -2426,7 +2426,8 @@ a.more-portfolio {
     padding: 5px;
     left: 0;
     width: 100%;
-    background: rgba(256, 256, 256, .4);
+    /*    background: rgba(256, 256, 256, .4);*/
+    text-shadow: 0 2px 5px rgba(249, 243, 243, 0.7);
 }
 
 .site-title {
@@ -6398,7 +6399,7 @@ header .social-icon ul li a {
     font-family: 'roboto', sans-serif;
     color: #fff;
     font-size: 16px;
-    margin: 9px 120px 0px;
+    margin: 0px 50px 0px;
     text-transform: capitalize;
     font-weight: 500;
     background-color: #0f7509;
@@ -16118,7 +16119,7 @@ footer, header, hgroup, main, menu, nav, section, summary {
     background: linear-gradient( #ff06 , #ff000061);
 }
 .inner-page-htop-c{
-    background-color: #fff9;
+    background-color: rgba(255, 255, 255,0.6);
 }
 .menu-bg .inner-page-htop-c{
     background-color: #fff;
@@ -16337,4 +16338,38 @@ h1.slogan {
 }
 .contact-padd-top-2{
     margin-top: 35px;
+}
+/*mobile navigation*/
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0; 
+    right: 0;
+    background-color: #f6f6f6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #818181;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
 }

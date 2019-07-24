@@ -3,6 +3,7 @@
 include './class/include.php';
 $id = '';
 $id = $_GET['id'];
+$TOUR_DATE_PHOTO = new TourDatePhoto(NULL);
 $TOUR_PACKAGE = new TourPackage($id);
 $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
 ?>
@@ -83,12 +84,12 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                             $key++;
                             ?>
                             <div class="row" style="padding-top: 20px;">  
-<!--                                <div class="col-md-1 col-sm-1 day_1 no-padding">
-                                    <div class="date-box">
-                                        <h2 class="Default-clr"><?php echo $key ?></h2>
-                                        <div class="default-bg"></div>
-                                    </div>
-                                </div>  -->
+                                <!--                                <div class="col-md-1 col-sm-1 day_1 no-padding">
+                                                                    <div class="date-box">
+                                                                        <h2 class="Default-clr"><?php echo $key ?></h2>
+                                                                        <div class="default-bg"></div>
+                                                                    </div>
+                                                                </div>  -->
 
                                 <div class="col-md-11" style=" ; margin-top: 5px;">
                                     <h3 class="tour-day"><?php echo $tour_date['title'] ?></h3> 
@@ -96,24 +97,37 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                             </div>
                             <div class="row view-tour" style="">
                                 <div class="col-md-12">
-                                  
-                                        <?php echo $tour_date['description'] ?>
-                                   
+
+                                    <?php echo $tour_date['description'] ?>
+
                                 </div>
                             </div>
 
-                            <div class="row tour-day-imgs">
+                            <div class="row tour-day-imgs hidden-xs hidden-sm">
                                 <?php
-                                $TOUR_DATE_PHOTO = new TourDatePhoto(NULL);
-                                foreach ($TOUR_DATE_PHOTO->getTourDatePhotosById($tour_date['id']) as $tour_date) {
+                                foreach ($TOUR_DATE_PHOTO->getTourDatePhotosById($tour_date['id']) as $tour_date_photo) {
                                     ?>
                                     <div class="col-md-3">
                                         <div class="gallery">
-                                            <a href="upload/tour-package/date/gallery/<?php echo $tour_date['image_name'] ?>" class="big"><img src="upload/tour-package/date/gallery/thumb/<?php echo $tour_date['image_name'] ?>" alt="" title="<?php echo $tour_date['caption'] ?>" /></a>
+                                            <a href="upload/tour-package/date/gallery/<?php echo $tour_date_photo['image_name'] ?>" class="big"><img src="upload/tour-package/date/gallery/thumb/<?php echo $tour_date_photo['image_name'] ?>" alt="" title="<?php echo $tour_date['caption'] ?>" /></a>
 
                                         </div>
                                     </div>
                                 <?php } ?>
+                            </div>
+                            <div class="row tour-day-imgs hidden-md hidden-lg">
+                                <div class="tour-owl owl-carousel owl-theme">
+                                    <?php
+                                    foreach ($TOUR_DATE_PHOTO->getTourDatePhotosById($tour_date['id']) as $tour_date_photo) {
+                                        ?>
+                                        <div class="gallery">
+                                            <a href="upload/tour-package/date/gallery/<?php echo $tour_date_photo['image_name'] ?>" class="big"><img src="upload/tour-package/date/gallery/thumb/<?php echo $tour_date_photo['image_name'] ?>" alt="" title="<?php echo $tour_date['caption'] ?>" /></a>
+
+                                        </div>
+                                        <?php
+                                    }
+                                    ?>
+                                </div>
                             </div>
                         <?php } ?>
                     </div>
@@ -151,18 +165,18 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                     </div>
                 </div>
 
-<!--                 Map 
-                <div class="contactmap contactmap-bottom contact-padd-top"  >
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="map1  wow fadeInUp">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.2871743706564!2d-71.06165938447522!3d42.357718779187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3708485209583%3A0x6e248f25891a1cc4!2sSchool+St%2C+Boston%2C+MA+02108%2C+USA!5e0!3m2!1sen!2sin!4v1507011599646" frameborder="0" allowfullscreen width=100% height="400px;"></iframe>
-
-                            </div>
-                        </div>
-                    </div>
-                     //Map 
-                </div>-->
+                <!--                 Map 
+                                <div class="contactmap contactmap-bottom contact-padd-top"  >
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="map1  wow fadeInUp">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.2871743706564!2d-71.06165938447522!3d42.357718779187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3708485209583%3A0x6e248f25891a1cc4!2sSchool+St%2C+Boston%2C+MA+02108%2C+USA!5e0!3m2!1sen!2sin!4v1507011599646" frameborder="0" allowfullscreen width=100% height="400px;"></iframe>
+                
+                                            </div>
+                                        </div>
+                                    </div>
+                                     //Map 
+                                </div>-->
             </div>
 
         </section>
@@ -249,5 +263,25 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                     });
         });
     </script>
+    <script>
+        $('.tour-owl').owlCarousel({
+            loop: true,
+            margin: 0,
+            dots: false,
+            nav: false,
+            autoplay: 1000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
 
+    </script>
 </html>

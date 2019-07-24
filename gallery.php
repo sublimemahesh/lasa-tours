@@ -75,7 +75,7 @@ include './class/include.php';
                             $ALBUM_PHOTO = new AlbumPhoto(NULL);
                             foreach ($ALBUM_PHOTO->getAlbumPhotosById(1) as $album_photo) {
                                 ?>
-                                <div class="col-md-3">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                     <div class="gallery gallery-bottom" >
                                         <a href="upload/photo-album/gallery/<?php echo $album_photo['image_name'] ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $album_photo['image_name'] ?>" alt="<?php echo $album_photo['caption'] ?>" title="<?php echo $album_photo['caption'] ?>" /></a>
 

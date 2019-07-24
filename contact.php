@@ -44,7 +44,7 @@ include './class/include.php';
     </head>
 
     <body>
-        
+
         <!-- START HEADER AREA -->
         <?php
         include 'header.php';
@@ -128,7 +128,9 @@ include './class/include.php';
                         <div class="single-contact wow fadeInUp" data-wow-delay=".4s">
                             <div class="contact-icon">
                                 <i class="fa fa-phone"></i>
-                                <h6 class="pull-right contact-padd-top">(+94) 77 897 8756</h6>
+                                <h6 class="pull-right contact-padd-top">
+                                    (+94) 77 688 1171
+                                </h6>
                             </div>
 
 
@@ -137,7 +139,7 @@ include './class/include.php';
                         <div class="single-contact wow fadeInUp" data-wow-delay=".6s">
                             <div class="contact-icon">
                                 <i class="fa fa-envelope"></i>
-                                <h6 class="pull-right contact-padd-top">websitename@mail.com</h6>
+                                <h6 class="pull-right contact-padd-top">info@lasatours.com</h6>
                             </div>
 
 
@@ -146,9 +148,8 @@ include './class/include.php';
                         <div class="single-contact wow fadeInUp" data-wow-delay=".2s">
                             <div class="contact-icon">
                                 <i class="fa fa-map-marker"></i>
+                                <h6 class="pull-right contact-padd-top">Unawatuna, Sri Lanka</h6>
                             </div>
-                            <p>Moutain Drive , Kensigten
-                                <br> London , United Kingdom</p>
                         </div>
                         <div class="clearfix"></div>
                         <div class="contact-socials">
@@ -158,7 +159,7 @@ include './class/include.php';
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -166,21 +167,21 @@ include './class/include.php';
             </div>
         </section>
         <!-- / END CONTACT DESIGN AREA -->
-        
+
         <!-- Map -->
         <div class="contactmap contactmap-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="map1  wow fadeInUp">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.2871743706564!2d-71.06165938447522!3d42.357718779187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3708485209583%3A0x6e248f25891a1cc4!2sSchool+St%2C+Boston%2C+MA+02108%2C+USA!5e0!3m2!1sen!2sin!4v1507011599646" frameborder="0" allowfullscreen width=100% height="400px;"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.32717083107!2d79.91496081477251!3d6.851329195048676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd97320a087%3A0xfa4766a56acdd267!2sSynotec+Holdings+Pvt.+Ltd!5e0!3m2!1sen!2slk!4v1563880835490!5m2!1sen!2slk" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- //Map -->
-        
+
         <!-- START FOOTER DESIGN AREA -->
         <?php
         include 'footer.php';
