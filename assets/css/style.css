@@ -537,6 +537,7 @@ a.read-more:hover {
 .logo {
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+  
 }
 
 .mainmenu .navbar-nav {
@@ -582,7 +583,7 @@ a.read-more:hover {
     padding-top: 0px;
     padding-bottom: 0px;
     padding-right: 0;
-    padding-left: 0;
+    /*    padding-left: 0;*/
     -webkit-transition: .3s;
     transition: .3s;
     font-weight: 400;
@@ -5767,11 +5768,12 @@ footer .widget ul.instagram-list li {
 #top-links1 {
     border-bottom: 1px solid #E5E5E5;
     position: relative;
+    margin-bottom: 5px;
 }
 
 #top-links ul,
 #top-links1 ul {
-    padding: 20px 0px 13px;
+    padding: 7px 0px 7px;
     margin: 0px;
     line-height: 18px;
 }
@@ -5789,7 +5791,7 @@ footer .widget ul.instagram-list li {
 #top-links ul li:last-child a,
 #top-links1 ul li:last-child a {
     border-right: 0;
-    padding-right: 0;
+/*    padding-right: 0;*/
 }
 
 #top-links .button li:first-child a:first-child,
@@ -16099,9 +16101,9 @@ footer, header, hgroup, main, menu, nav, section, summary {
 .top-bar li {
     float: left;
 }
-.top-bar .img{
-    padding: 12px 0px 0px 0px;
-    width: 70%;
+.top-bar .img {
+    padding: 0px 0px 0px 0px;
+    width: 60%;
 }
 .marging-top-lan{
     padding-top: 4px;
@@ -16109,14 +16111,15 @@ footer, header, hgroup, main, menu, nav, section, summary {
 .inq{
     font-size: 14px;
     font-weight: 500;
-    margin-right: 15px;
-    border: 1px solid #62ac1e;
+    margin-right: 10px;
+    border: 1px solid #62ac1e !important;
     border-radius: 20px;
     padding: 5px;
-    padding: 5px 10px;
+    padding: 4px 10px;
+     background: linear-gradient( #ff06 , #ff000061) !important;
 }
 .inq:hover{
-    background: linear-gradient( #ff06 , #ff000061);
+    background: transparent !important;
 }
 .inner-page-htop-c{
     background-color: rgba(255, 255, 255,0.6);
@@ -16128,7 +16131,7 @@ footer, header, hgroup, main, menu, nav, section, summary {
     margin-top: 8px;
 }
 .m-top-2{
-    margin-top: 16px;
+    margin-top: 15px;
 }
 .m-comment{
     margin-left:10px;
@@ -16319,7 +16322,6 @@ img {
     margin: 0;
     height: 25%;
 }
-
 figure:hover h2 {
     background: #f1f1f1;
     transition: transform 0.35s;
@@ -16372,4 +16374,7 @@ h1.slogan {
     top: 0;
     right: 25px;
     font-size: 36px;
+}
+.footer-contact-imgs{
+    margin-right: 8px;
 }

@@ -54,14 +54,20 @@
                             <i class="fa fa-map-marker" aria-hidden="true"></i> No 34, Galle Road, Mathara
                         </li>
                         <li>
-                            <i class="fa fa-phone" aria-hidden="true"></i>(+94) 77 688 1171
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <a href="mailto:info@srilankalasatours.com">info@srilankalasatours.com
+                            </a>
                         </li>
                         <li>
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <a href="#">info@toursite.com<br/>
-                                www.toursite.com</a>
+                            <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:(+94) 77 688 1171">(+94) 77 688 1171</a>
                         </li>
+
+                        
                     </ul>
+                    <img class="footer-contact-imgs" src="assets/images/social/001-whatsapp.png">
+                    <img class="footer-contact-imgs" src="assets/images/social/002-viber.png">
+                    <img class="footer-contact-imgs" src="assets/images/social/003-instagram.png">
+                    <img class="footer-contact-imgs" src="assets/images/social/004-facebook.png">
                 </div>
             </div>
             <!-- third block -->
@@ -80,7 +86,8 @@
 
 
                                 </li>
-                            <?php }
+                            <?php
+                            }
                         }
                         ?> 
                     </ul> 
@@ -107,7 +114,7 @@
     </div>
 </footer>
 
- 
+
 
 
 <script type="text/javascript">
@@ -118,14 +125,14 @@
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 
 <script type="text/javascript">
-$('.translation-links a').click(function () {
-var lang = $(this).data('lang');
-var $frame = $('.goog-te-menu-frame:first');
-if (!$frame.size()) {
-    alert("Error: Could not find Google translate frame.");
-    return false;
-}
-$frame.contents().find('.goog-te-menu2-item span.text:contains(' + lang + ')').get(0).click();
-return false;
-});
+    $('.translation-links a').click(function () {
+        var lang = $(this).data('lang');
+        var $frame = $('.goog-te-menu-frame:first');
+        if (!$frame.size()) {
+            alert("Error: Could not find Google translate frame.");
+            return false;
+        }
+        $frame.contents().find('.goog-te-menu2-item span.text:contains(' + lang + ')').get(0).click();
+        return false;
+    });
 </script>

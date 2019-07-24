@@ -3,8 +3,29 @@
     <div class="header-top-area  ">
         <div class="inner-page-htop-c ">
             <div class="container">
-                <div class="row top-bar-row ">
-                    <div class="col-md-6 col-xs-6">
+                <div class=" top-bar-row ">
+                                        <div id="top-links" class="nav">
+                        <ul class="list-inline top-bar inline-2 mr-auto">
+                            <li style="padding-left: 0px">
+                                <img src="assets/images/uk.png" alt="" class="img-responsive img"/>
+                            </li> 
+                            <li style="padding-left: 0px">
+                                <img src="assets/images/german.png" alt="" class="img-responsive img"/>
+                            </li>
+<!--                            <li style="padding-left: 0px" class="marging-top-lan"><div id="google_translate_element" ></div></li>-->
+                        </ul>
+                        <ul class="list-inline pull-right button login-reg ml-auto">
+
+                            <li><a href="tel:(+94) 77 688 1171">
+                                    +94 77 688 1171
+                                </a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i> </a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i> </a></li>
+                            <li><a href="#"><i class="fa fa-tripadvisor"></i> </a></li>
+                             <li>  <a href="booking.php" class="color-black inq"> INQUIRY NOW </a></li>
+                        </ul>
+                    </div>
+<!--                    <div class="col-md-6 col-xs-6">
                         <ul class="top-bar">
                             <li>
                                 <img src="assets/images/uk.png" alt="" class="img-responsive img"/>
@@ -18,20 +39,17 @@
 
                     </div>
                     <div class="col-md-6  col-xs-6  ">
-
                         <ul class="top-bar ">
-                            <li class=" pull-right   m-top-2"  >
-                                <h6 class="color-black"><i class="fa fa-phone" aria-hidden="true"></i> 
-                                    <a href="tel:(+94) 77 688 1171">(+94) 77 688 1171</a>
-                                </h6>
-                            </li> 
-
-                            <li class="   pull-right inq   color-black m-top" >
+                              <li class="   pull-right inq   color-black m-top" >
                                 <a href="booking.php" class="color-black"> INQUIRY NOW </a>
                             </li>
-
+                            <li class=" pull-right  m-top-2"  >
+                                <h6 class="color-black"><i class="fa fa-phone" aria-hidden="true"></i> 
+                                    <a style="color: #000;margin-right: 20px;" href="tel:(+94) 77 688 1171">(+94) 77 688 1171</a>
+                                </h6>
+                            </li> 
                         </ul>
-                    </div>
+                    </div>-->
 
                 </div> 
 

@@ -2557,7 +2557,8 @@ Version      : 1.0
 }
 @media (min-width: 1025px){
     .menu-bg .mainmenu .navbar-nav>li{
-        padding: 30px 5px;
+        padding: 35px 5px 15px;
+        
     }
     .mainmenu .navbar-nav > li {
         padding: 22px 5px;
