@@ -111,7 +111,7 @@ $TOUR_DATE = new TourDate(NULL);
                                                     $letters = strlen($tour_package["title"]);
                                                     if ($letters > 20) {
                                                         ?>
-                                                        <?php echo substr($tour_package["title"], 0, 15) . '....'; ?>
+                                                        <?php echo substr($tour_package["title"], 0, 20) . '...'; ?>
                                                         <?php
                                                     } else {
                                                         ?>

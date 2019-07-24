@@ -116,8 +116,10 @@ include './class/include.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div id="dismessage" align="center"></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="dismessage" align="center"></div>
+                            </div>
                         </div>
                         <!-- / END CONTACT FORM DESIGN AREA </div> -->
                     </div>
