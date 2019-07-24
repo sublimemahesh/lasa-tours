@@ -103,7 +103,7 @@ $ABOUT_US = new Page(1);
                             <div class="offer">
                                 <img alt="image" src="assets/images/services/oneday.jpg">
                                 <div class="overlay-offer">
-                                    <h2 class="text-shadow">One Day </h2> 
+                                    <h2 class="text-shadow box-text" >One Day Tours</h2> 
                                 </div>
                             </div> 
                         </a>
@@ -114,7 +114,7 @@ $ABOUT_US = new Page(1);
                             <div class="offer">
                                 <img alt="image" src="assets/images/services/2.jpg">
                                 <div class="overlay-offer">
-                                    <h2 class="text-shadow">Two Day Tours </h2> 
+                                    <h2 class="text-shadow box-text" >Two Day Tours </h2> 
                                 </div>
                             </div> 
                         </a>
@@ -126,7 +126,7 @@ $ABOUT_US = new Page(1);
                             <div class="offer">
                                 <img alt="image" src="assets/images/services/round.jpg">
                                 <div class="overlay-offer">
-                                    <h2 class="text-shadow">Round Tours </h2> 
+                                    <h2 class="text-shadow box-text" >Round Tours </h2> 
                                 </div>
                             </div>
                         </a>
@@ -137,7 +137,7 @@ $ABOUT_US = new Page(1);
                             <div class="offer">
                                 <img alt="image" src="assets/images/services/service.jpg">
                                 <div class="overlay-offer">
-                                    <h2 class="text-shadow">Services</h2> 
+                                    <h2 class="text-shadow box-text" >Services</h2> 
                                 </div>
                             </div>
                         </a>

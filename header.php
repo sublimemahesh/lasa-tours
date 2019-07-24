@@ -19,8 +19,8 @@
                             <li><a href="tel:(+94) 77 688 1171">
                                     +94 77 688 1171
                                 </a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i> </a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i> </a></li>
+                            <li><a href="https://www.instagram.com/Tour_in_sri_lanka"><i class="fa fa-instagram"></i> </a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i> </a></li>
                             <li><a href="#"><i class="fa fa-tripadvisor"></i> </a></li>
                              <li>  <a href="booking.php" class="color-black inq"> INQUIRY NOW </a></li>
                         </ul>
@@ -126,3 +126,4 @@
         </div>
     </div>
 </header>
+
