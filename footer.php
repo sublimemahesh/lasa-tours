@@ -51,23 +51,23 @@
                     <div class="vertical-space-10"></div>
                     <ul class="footer-address">
                         <li>
-                            <i class="fa fa-map-marker" aria-hidden="true"></i> No 34, Galle Road, Mathara
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> 181, Magatota, Koggala, Habaraduwa.
                         </li>
                         <li>
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <a href="mailto:info@srilankalasatours.com">info@srilankalasatours.com
+                            <a href="mailto:info@srilankalasatours.com">info@srilankalasatours.com 
                             </a>
                         </li>
                         <li>
                             <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:(+94) 77 688 1171">(+94) 77 688 1171</a>
                         </li>
-
-                        
                     </ul>
-                    <img class="footer-contact-imgs" src="assets/images/social/001-whatsapp.png">
-                    <img class="footer-contact-imgs" src="assets/images/social/002-viber.png">
-                    <img class="footer-contact-imgs" src="assets/images/social/003-instagram.png">
-                    <img class="footer-contact-imgs" src="assets/images/social/004-facebook.png">
+
+                    <a class="" target="_blank" href="https://api.whatsapp.com/send?phone=94776881171"><img class="footer-contact-imgs" src="assets/images/social/001-whatsapp.png"></a>
+                    <a class="" target="_blank" href="viber://chat?number=94776881171"><img class="footer-contact-imgs" src="assets/images/social/002-viber.png"></i></a>
+                    <a class="" target="_blank" href="https://www.instagram.com/Tour_in_sri_lanka"><img class="footer-contact-imgs" src="assets/images/social/003-instagram.png"></i></a>
+                    <a class="" target="_blank" href="https://www.facebook.com/"><img class="footer-contact-imgs" src="assets/images/social/004-facebook.png"></i></a>
+
                 </div>
             </div>
             <!-- third block -->
@@ -86,7 +86,7 @@
 
 
                                 </li>
-                            <?php
+                                <?php
                             }
                         }
                         ?> 
@@ -105,7 +105,7 @@
                 </div>
                 <div class="col-md-6 right-align">
                     <div class="footer-text  ">
-                        <h6>Design By: Synotec </h6> 
+                        <h6>Design By: Synotec Holdings (Pvt) Ltd.</h6> 
                     </div>
 
                 </div>

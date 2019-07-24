@@ -144,7 +144,7 @@ include './class/include.php';
                         <div class="single-contact wow fadeInUp" data-wow-delay=".6s">
                             <div class="contact-icon">
                                 <i class="fa fa-envelope"></i>
-                                <h6 class="pull-right contact-padd-top">info@lasatours.com</h6>
+                                <h6 class="pull-right contact-padd-top">info@srilankalasatours.com</h6>
                             </div>
 
 
@@ -153,18 +153,17 @@ include './class/include.php';
                         <div class="single-contact wow fadeInUp" data-wow-delay=".2s">
                             <div class="contact-icon">
                                 <i class="fa fa-map-marker"></i>
-                                <h6 class="pull-right contact-padd-top">Unawatuna, Sri Lanka</h6>
+                                <h6 class="pull-right contact-padd-top">181, Magatota, Koggala, <br>Habaraduwa.</h6>
                             </div>
                         </div>
                         <div class="clearfix"></div>
                         <div class="contact-socials">
                             <h4>Follow Us Social</h4>
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=94776881171"><i class="fa fa-whatsapp"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.instagram.com/Tour_in_sri_lanka"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>

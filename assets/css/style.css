@@ -2528,7 +2528,7 @@ a.more-portfolio {
 
 .overlay-offer h2 {
     line-height: 40px;
-    padding: 0px 10px;
+    padding: 0px 4px;
     font-weight: 500;
 }
 .contentBanner_image img{
@@ -16377,4 +16377,7 @@ h1.slogan {
 }
 .footer-contact-imgs{
     margin-right: 8px;
+}
+.box-text{
+    font-size: 21px;
 }
