@@ -45,7 +45,7 @@ $ABOUT_US = new Page(1);
         <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="slider/slick.css" rel="stylesheet" type="text/css"/>
         <link href="slider/style.css" rel="stylesheet" type="text/css"/>
-    
+
     </head>
 
     <body>
@@ -108,7 +108,7 @@ $ABOUT_US = new Page(1);
                             </div> 
                         </a>
                     </div>
-                    
+
                     <div class="col-md-3 col-sm-4">
                         <a href="tours.php?id=3"> 
                             <div class="offer">
@@ -190,9 +190,9 @@ $ABOUT_US = new Page(1);
                     <?php
                     $TOUR_PACKAGE = new TourPackage(NULL);
                     foreach ($TOUR_PACKAGE->all() as $key => $tour_package) {
-                         if ($key > 5) {
-                               break;
-                         }
+                        if ($key > 5) {
+                            break;
+                        }
                         ?>
                         <div class="single-testimonial item responsive_none">
 
@@ -227,8 +227,7 @@ $ABOUT_US = new Page(1);
                                 </div>
                             </div> 
                         </div>
-                    <?php 
-                         
+                        <?php
                     }
                     ?> 
                 </div>  
@@ -436,55 +435,91 @@ $ABOUT_US = new Page(1);
         <script src="slider/custom.js" type="text/javascript"></script>
 
 
-    </body>
-    <script>
-        $(function () {
-            var $gallery = $('.gallery a').simpleLightbox();
 
-            $gallery.on('show.simplelightbox', function () {
-                console.log('Requested for showing');
-            })
-                    .on('shown.simplelightbox', function () {
-                        console.log('Shown');
-                    })
-                    .on('close.simplelightbox', function () {
-                        console.log('Requested for closing');
-                    })
-                    .on('closed.simplelightbox', function () {
-                        console.log('Closed');
-                    })
-                    .on('change.simplelightbox', function () {
-                        console.log('Requested for change');
-                    })
-                    .on('next.simplelightbox', function () {
-                        console.log('Requested for next');
-                    })
-                    .on('prev.simplelightbox', function () {
-                        console.log('Requested for prev');
-                    })
-                    .on('nextImageLoaded.simplelightbox', function () {
-                        console.log('Next image loaded');
-                    })
-                    .on('prevImageLoaded.simplelightbox', function () {
-                        console.log('Prev image loaded');
-                    })
-                    .on('changed.simplelightbox', function () {
-                        console.log('Image changed');
-                    })
-                    .on('nextDone.simplelightbox', function () {
-                        console.log('Image changed to next');
-                    })
-                    .on('prevDone.simplelightbox', function () {
-                        console.log('Image changed to prev');
-                    })
-                    .on('error.simplelightbox', function (e) {
-                        console.log('No image found, go to the next/prev');
-                        console.log(e);
+        <script>
+            $(function () {
+                var $gallery = $('.gallery a').simpleLightbox();
+
+                $gallery.on('show.simplelightbox', function () {
+                    console.log('Requested for showing');
+                })
+                        .on('shown.simplelightbox', function () {
+                            console.log('Shown');
+                        })
+                        .on('close.simplelightbox', function () {
+                            console.log('Requested for closing');
+                        })
+                        .on('closed.simplelightbox', function () {
+                            console.log('Closed');
+                        })
+                        .on('change.simplelightbox', function () {
+                            console.log('Requested for change');
+                        })
+                        .on('next.simplelightbox', function () {
+                            console.log('Requested for next');
+                        })
+                        .on('prev.simplelightbox', function () {
+                            console.log('Requested for prev');
+                        })
+                        .on('nextImageLoaded.simplelightbox', function () {
+                            console.log('Next image loaded');
+                        })
+                        .on('prevImageLoaded.simplelightbox', function () {
+                            console.log('Prev image loaded');
+                        })
+                        .on('changed.simplelightbox', function () {
+                            console.log('Image changed');
+                        })
+                        .on('nextDone.simplelightbox', function () {
+                            console.log('Image changed to next');
+                        })
+                        .on('prevDone.simplelightbox', function () {
+                            console.log('Image changed to prev');
+                        })
+                        .on('error.simplelightbox', function (e) {
+                            console.log('No image found, go to the next/prev');
+                            console.log(e);
+                        });
+            });
+
+
+        </script>
+       <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element'); //remove the layout
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+
+
+        <script type="text/javascript">
+                    function triggerHtmlEvent(element, eventName) {
+                        var event;
+                        if (document.createEvent) {
+                            event = document.createEvent('HTMLEvents');
+                            event.initEvent(eventName, true, true);
+                            element.dispatchEvent(event);
+                        } else {
+                            event = document.createEventObject();
+                            event.eventType = eventName;
+                            element.fireEvent('on' + event.eventType, event);
+                        }
+                    }
+        <!-- Flag click handler -->
+                    $('.translation-links a').click(function (e) {
+                        e.preventDefault();
+                        var lang = $(this).data('lang');
+                        $('#google_translate_element select option').each(function () {
+                            if ($(this).text().indexOf(lang) > -1) {
+                                $(this).parent().val($(this).val());
+                                var container = document.getElementById('google_translate_element');
+                                var select = container.getElementsByTagName('select')[0];
+                                triggerHtmlEvent(select, 'change');
+                            }
+                        });
                     });
-        });
 
-      
-    </script>
-</body>
+        </script>
+    </body>
 
 </html>
