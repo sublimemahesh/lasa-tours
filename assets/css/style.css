@@ -537,7 +537,7 @@ a.read-more:hover {
 .logo {
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-  
+
 }
 
 .mainmenu .navbar-nav {
@@ -2285,7 +2285,7 @@ a.more-portfolio {
 }
 
 .contentBanner_image img {
-    max-width: 263px;
+    /*    max-width: 263px;*/
     transition: .3s ease-in-out;
 }
 
@@ -5791,7 +5791,7 @@ footer .widget ul.instagram-list li {
 #top-links ul li:last-child a,
 #top-links1 ul li:last-child a {
     border-right: 0;
-/*    padding-right: 0;*/
+    /*    padding-right: 0;*/
 }
 
 #top-links .button li:first-child a:first-child,
@@ -16105,6 +16105,23 @@ footer, header, hgroup, main, menu, nav, section, summary {
     padding: 0px 0px 0px 0px;
     width: 60%;
 }
+.top-bar-mobile {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    width 115px;
+    float:right;
+    margin-right: 30px;
+}
+
+.top-bar-mobile li {
+    float: left;
+}
+.top-bar-mobile .img {
+    padding: 0px 0px 0px 0px;
+    width: 50%;
+}
 .marging-top-lan{
     padding-top: 4px;
 }
@@ -16116,7 +16133,7 @@ footer, header, hgroup, main, menu, nav, section, summary {
     border-radius: 20px;
     padding: 5px;
     padding: 4px 10px;
-     background: linear-gradient( #ff06 , #ff000061) !important;
+    background: linear-gradient( #ff06 , #ff000061) !important;
 }
 .inq:hover{
     background: transparent !important;
@@ -16156,7 +16173,7 @@ section.team { }
 .grid {
     display: block;
     margin: 0 auto;                  
-    width: 95%;
+    width: 100%;
     padding-left: 0;  
     font-size: 0;  
     text-align: center;
@@ -16346,7 +16363,7 @@ h1.slogan {
 .sidepanel  {
     width: 0;
     position: fixed;
-    z-index: 1;
+   z-index: 99999 !important;
     height: 100%;
     top: 0; 
     right: 0;
@@ -16377,7 +16394,30 @@ h1.slogan {
 }
 .footer-contact-imgs{
     margin-right: 8px;
+    margin-bottom: 20px !important;
 }
 .box-text{
     font-size: 21px;
+}
+.top-bar-mobile-email{
+    float: left;
+    list-style: none;
+}
+.top-bar-mobile-email a{
+    color: #000;
+}
+.mobile-flag-container{
+
+}
+.top-bar-mobile-phone{
+    float: left;
+    list-style-type: none;
+    color: #fff;
+}
+
+.top-bar-mobile-phone a{
+       color: #fff;
+}
+.mobile-flags-container{
+        z-index: 999; 
 }

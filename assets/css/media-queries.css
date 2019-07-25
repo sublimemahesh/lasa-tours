@@ -101,7 +101,7 @@ a.button {
 }
 }
 @media(max-width: 991px){
-.mainmenu .navbar-nav>li {margin: 0px 0px;}
+.mainmenu .navbar-nav>li {margin: 3px 0px;}
 .header-text p {display: none;}
 .ad .media-body {padding: 30px 0px 30px 7px;}
 .tour-cost { top: 100px;}
@@ -339,8 +339,8 @@ li.product .price-add-to-cart>.price, .section-onsale-product .onsale-product .p
 
 /*///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////*/
-@media(max-width: 1025px){
+/*@media(max-width: 1025px){
 	.mainmenu .navbar-nav>li {
     margin: 0;
-}
+}*/
 }

@@ -40,6 +40,7 @@ $ACTIVITYS = new Activities($id);
         <!-- RESPONSIVE CSS -->
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" type="text/css" href="assets/css/media-queries.css">
+        <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
     </head>
 
@@ -123,7 +124,7 @@ $ACTIVITYS = new Activities($id);
                                                     </a>
                                                     <div class="post-desc">
                                                         <a  href="view-things-to-do.php?id=<?php echo $activity['id'] ?>"> <h4><?php echo $activity['title'] ?></h4></a>
-                                                           <?php echo substr($activity['short_description'], 0, 40) ?>.. 
+                                                        <?php echo substr($activity['short_description'], 0, 40) ?>.. 
                                                     </div>
                                                 </div>
                                                 <?php

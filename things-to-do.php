@@ -42,7 +42,7 @@ include './class/include.php';
         <!-- RESPONSIVE CSS -->
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" type="text/css" href="assets/css/media-queries.css">
-
+   <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>

@@ -47,6 +47,7 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
 
         <link rel="stylesheet" type="text/css" href="assets/css/media-queries.css">
         <link href="assets/css/simplelightbox.min.css" rel="stylesheet" type="text/css"/>
+        <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>

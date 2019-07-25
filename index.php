@@ -45,14 +45,13 @@ $ABOUT_US = new Page(1);
         <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="slider/slick.css" rel="stylesheet" type="text/css"/>
         <link href="slider/style.css" rel="stylesheet" type="text/css"/>
-
     </head>
 
     <body>
 
         <!-- START HEADER AREA -->
         <?php
-        include 'header.php';
+        include './header-index.php';
         ?>
         <!-- / END HEADER AREA -->
 
