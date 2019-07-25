@@ -7,6 +7,9 @@
                     <img alt="image" src="assets/images/logo.png">
                     <p>Travelers are always discoverers, especially those who travel by air. There are no signposts in the sky to show a man has passed that way before. There are no channels marked. The flier breaks each second into new uncharted seas.</p>
                 </div>
+                <div class="footer-nav" >
+                    <div id="google_translate_element" ></div>   
+                </div>
             </div>
 
 
@@ -113,26 +116,5 @@
         </div>
     </div>
 </footer>
+ 
 
-
-
-
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
-    }
-</script>        
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
-
-<script type="text/javascript">
-    $('.translation-links a').click(function () {
-        var lang = $(this).data('lang');
-        var $frame = $('.goog-te-menu-frame:first');
-        if (!$frame.size()) {
-            alert("Error: Could not find Google translate frame.");
-            return false;
-        }
-        $frame.contents().find('.goog-te-menu2-item span.text:contains(' + lang + ')').get(0).click();
-        return false;
-    });
-</script>

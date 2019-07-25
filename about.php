@@ -43,6 +43,7 @@ $ABOUT_US = new Page(2);
         <!-- RESPONSIVE CSS -->
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" type="text/css" href="assets/css/media-queries.css">
+        <link href="assets/css/simplelightbox.min.css" rel="stylesheet" type="text/css"/>
 
     </head>
 
@@ -83,15 +84,36 @@ $ABOUT_US = new Page(2);
                         <p>
                             <?php echo $ABOUT_US->description ?>      
                         </p>
-
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <img alt="image" src="assets/images/about.jpg">
                     </div>
                 </div>
+
             </div>
         </section>
-        <!-- START SERVICE DESIGN AREA -->
+
+        <section class="offter-area section-padding">
+            <div class="container">
+                <div class="row">                    
+
+                    <div class="col-md-3 col-sm-4 gallery">
+                        <div class="offer gallery gallery-bottom">
+                            <a href="assets/images/social/2.jpg" ><img src="assets/images/social/1.jpg" alt="" title="Srilanka Travel Guide Licence" /></a>
+
+                        </div> 
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 gallery">
+                        <div class="offer gallery">
+                            <a href="assets/images/social/4.jpg" ><img src="assets/images/social/3.jpg" alt="" title="Srilanka Travel Guide Licence" /></a>
+
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <section id="service" class="service-area section-padding">
             <div class="container">
                 <div class="row">
@@ -133,7 +155,8 @@ $ABOUT_US = new Page(2);
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
+
         <!-- / END SERVICE DESIGN AREA -->
 
         <!-- START FOOTER DESIGN AREA -->
@@ -171,6 +194,44 @@ $ABOUT_US = new Page(2);
         <script src="assets/js/venobox.min.js"></script>
         <!-- scripts js -->
         <script src="assets/js/scripts.js"></script> 
+        <script src="assets/js/simple-lightbox.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element'); //remove the layout
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+
+
+        <script type="text/javascript">
+    function triggerHtmlEvent(element, eventName) {
+        var event;
+    if (document.createEvent) {
+    event = document.createEvent('HTMLEvents');
+    event.initEvent(eventName, true, true);
+            element.dispatchEvent(event);
+            } else {
+    event = document.createEventObject();
+            event.eventType = eventName;
+            element.fireEvent('on' + event.eventType, event);
+        }
+    }
+<!-- Flag click handler -->
+$('.translation-links a').click(function (e) {
+            e.preventDefault();
+            var lang = $(this).data('lang');
+            $('
+            #google_translate_element select option').each(function () {
+            if ($(this).text().indexOf(lang) > -1) {
+                $(this).parent().val($(this).val());
+                var container = document.getElementById('google_translate_element');
+                var select = container.getElementsByTagName('select')[0];
+                triggerHtmlEvent(select, 'change');
+            }
+        });
+    });
+
+        </script>
     </body>
 
 </html>
