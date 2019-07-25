@@ -38,6 +38,8 @@ include './class/include.php';
         <link rel="stylesheet" href="assets/css/color-switcher.css">
         <!-- RESPONSIVE CSS -->
         <link rel="stylesheet" href="assets/css/responsive.css">
+        
+           <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
         <link rel="stylesheet" type="text/css" href="assets/css/media-queries.css">
         <link href="contact-form/style.css" rel="stylesheet" type="text/css"/>

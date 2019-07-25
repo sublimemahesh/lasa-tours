@@ -114,8 +114,8 @@
     </div>
 </header>
 
-<div class="mobile-flags-container" style="position: absolute;width:100%">
-
+<div class="mobile-flags-container" style="   position: absolute;
+     width:100%">
     <ul class="top-bar-mobile translation-links">
         <li style="text-align: right;margin-right: 8px;">
            <a href="#" class="russian " data-lang="Russian"><img src="assets/img/003-russia.png" alt=""/></a>
@@ -125,13 +125,12 @@
         </li>
 
     </ul>
-  
-    <ul class="top-bar-mobile-phone">
+    <ul class="top-bar-mobile-email">
         <li style="text-align: right;margin-right: 8px; font-weight: 500;">
-              <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:(+94) 77 688 1171">(+94) 77 688 1171</a>
+            <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:(+94) 77 688 1171">(+94) 77 688 1171</a>
         </li> 
-
-
     </ul>
 </div>
+
+
 

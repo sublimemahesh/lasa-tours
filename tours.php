@@ -46,7 +46,7 @@ $TOUR_DATE = new TourDate(NULL);
         <!-- RESPONSIVE CSS -->
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" type="text/css" href="assets/css/media-queries.css">
-
+        <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>
@@ -87,7 +87,6 @@ $TOUR_DATE = new TourDate(NULL);
                         foreach ($TOUR_PACKAGE->getTourPackagesByType($id) as $tour_package) {
 
                             $Dates = count($TOUR_DATE->getTourDatesById($tour_package['id']));
-
                             ?>
                             <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 grid-item cat-2 cat-4">
                                 <div class="product-thumb">
@@ -139,7 +138,7 @@ $TOUR_DATE = new TourDate(NULL);
                                     </div>
                                 </div>
                             </div>
-<?php } ?>
+                        <?php } ?>
                     </div>
 
                 </div>
