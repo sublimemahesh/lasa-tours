@@ -11,11 +11,11 @@ $ACTIVITYS = new Activities($id);
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="TravelCo - Travel Agency Bootstrap Template">
-        <meta name="keywords" content="new, html, bootstrap, new html template, design, creative, clean, modern">
-        <meta name="author" content="Nauman Anwar">
+       <meta name="description" content="<?php echo $ACTIVITYS->short_description; ?>Sri Lanka Lasa Tours is Reputable and trustworthy holiday partner in Sri Lanka. You can plan your dream vacation the way you want it to be with our Lasa Tours package options. Our chauffeurs are specialist in Russian languages.">
+        <meta name="keywords" content="<?php echo $ACTIVITYS->title; ?>, sri lanka round tours, one day tours, tour arrangement, sri lanka lasa tours, lasa tours tour packages, about sri lanka lasa tours, best tour guide in sri lanka,  ">
+        <meta name="author" content="Synotec Holdings">
         <!-- PAGE TITLE -->
-        <title>Things to do - <?php echo $ACTIVITYS->title ?></title>
+        <title>Things to do - <?php echo $ACTIVITYS->title ?> | Sri Lanka Lasa Tours</title>
         <!-- BOOTSTRAP CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <!-- ALL GOOGLE FONTS -->

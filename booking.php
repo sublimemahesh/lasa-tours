@@ -16,11 +16,11 @@ if (isset($_GET['id'])) {
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="TravelCo - Travel Agency Bootstrap Template">
-        <meta name="keywords" content="new, html, bootstrap, new html template, design, creative, clean, modern">
-        <meta name="author" content="Nauman Anwar">
+        <meta name="description" content="Sri Lanka Lasa Tours is Reputable and trustworthy holiday partner in Sri Lanka. You can plan your dream vacation the way you want it to be with our Lasa Tours package options. Our chauffeurs are specialist in Russian languages.">
+        <meta name="keywords" content="sri lanka round tours, one day tours, tour arrangement, sri lanka lasa tours, lasa tours tour packages, about sri lanka lasa tours, best tour guide in sri lanka, book now for inquiry, tailor-made tours ">
+        <meta name="author" content="Synotec Holdings">
         <!-- PAGE TITLE -->
-        <title>Book Now<?php echo $TOUR_PACKAGES->title ?></title>
+        <title>Book Now | Sri Lanka Lasa Tours</title>
         <!-- BOOTSTRAP CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <!-- ALL GOOGLE FONTS -->
@@ -45,9 +45,10 @@ if (isset($_GET['id'])) {
         <link rel="stylesheet" href="assets/css/color-switcher.css">
         <!-- RESPONSIVE CSS -->
         <link rel="stylesheet" href="assets/css/responsive.css">
-           <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="booking-form/style.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/media-queries.css"> 
+        <link href="assets/css/datepicker.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>
@@ -110,7 +111,7 @@ if (isset($_GET['id'])) {
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control"id="txtCountry" name="txtCountry"  placeholder="Country Code *" required="required">
+                                        <input type="text" class="form-control"id="txtCountry" name="txtCountry"  placeholder="Country *" required="required">
                                         <div class="col-lg-12">
                                             <span id="spanCountry"></span>
                                         </div>
@@ -118,23 +119,34 @@ if (isset($_GET['id'])) {
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="check in dd/mm/yy *" id="txtCheckIn" name="txtCheckIn" required="required">
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <span id="spanCheckIn"></span>
-                                    </div>
+                            <!--                            <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control input-validater" placeholder="Arrival date *" id="txtCheckIn" name="txtCheckIn" required="required" value="<?php echo $visitor_check_in['visitor_check_in'] ?>"><i class="fa fa-calendar"></i>
+                                                                </div>
+                                                                <div class="col-lg-12">
+                                                                    <span id="spanCheckIn"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control input-validater" placeholder="Departure date *" id="txtCheckOut" name="txtCheckOut"required="required" ><i class="fa fa-calendar"></i>
+                                                                </div>
+                                                                <div class="col-lg-12">
+                                                                    <span id="spanCheckOut"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>-->
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-6">
+                                    <input value="" type="text" name="txtAdate" id="txtAdate"  placeholder="Arrival date *" class="form-control " value="<?php echo $visitor_check_in['Arrival_date'] ?>">
+                                    <span id="spanAdate"></span>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="check out dd/mm/yy *" id="txtCheckOut" name="txtCheckOut"required="required">
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <span id="spanCheckOut"></span>
-                                    </div>
-                                </div>
+
+                                <div class="col-xs-12 col-sm-6">
+                                    <input value="" type="text" name="txtDdate" id="txtDdate" placeholder="Departure date *" class="form-control ">
+                                    <span id="spanDdate"></span>
+                                </div> 
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
@@ -148,14 +160,13 @@ if (isset($_GET['id'])) {
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="number" class="form-control" placeholder="Num of Child *" id="txtChild" name="txtChild" required="required">
+                                        <input type="number" class="form-control" placeholder="Num of Child *" min="1" id="txtChild" name="txtChild" required="required">
                                     </div>
-
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <select class="select_booking">
+                                    <select class="select_booking" id="txtTour" name="txtTour">
                                         <option value="">
                                             -- Please Select Your Tour Package --
                                         </option>
@@ -177,19 +188,21 @@ if (isset($_GET['id'])) {
                                             }
                                         }
                                         ?>
+                                                  
                                     </select>
+                                     <span id="spanTour"></span>
                                 </div>
-                                <div class="col-md-6">
-                                    <select class="select_booking" id="txtAirport" name="txtAirport">
-                                        <option selected="selected">-- Airport Pick up --</option>
-                                        <option value="yes"> Yes </option>
-                                        <option value="no"> No </option>
-
-                                    </select>
-                                    <div class="col-lg-12">
-                                        <span id="spanAirport"></span>
-                                    </div>
-                                </div>
+                                <!--                                <div class="col-md-6">
+                                                                    <select class="select_booking" id="txtAirport" name="txtAirport">
+                                                                        <option selected="selected">-- Airport Pick up --</option>
+                                                                        <option value="yes"> Yes </option>
+                                                                        <option value="no"> No </option>
+                                
+                                                                    </select>
+                                                                    <div class="col-lg-12">
+                                                                        <span id="spanAirport"></span>
+                                                                    </div>
+                                                                </div>-->
                             </div>
                             <div class="row" style="margin-top: 25px;">
                                 <div class="col-md-12">
@@ -222,47 +235,45 @@ if (isset($_GET['id'])) {
                     </div> 
                 </div>
             </div>
+        </section>
+        <!-- / END CONTACT DESIGN AREA -->
 
+        <!-- START FOOTER DESIGN AREA -->
+        <?php
+        include 'footer.php';
+        ?>
+        <!-- / END CONTACT DETAILS DESIGN AREA -->
+        <!-- START SCROOL UP DESIGN AREA -->
+        <div class="scroll-to-up">
+            <div class="scrollup">
+                <span class="fa fa-chevron-up"></span>
+            </div>
         </div>
-    </div>
-</section>
-<!-- / END CONTACT DESIGN AREA -->
-
-<!-- START FOOTER DESIGN AREA -->
-<?php
-include 'footer.php';
-?>
-<!-- / END CONTACT DETAILS DESIGN AREA -->
-<!-- START SCROOL UP DESIGN AREA -->
-<div class="scroll-to-up">
-    <div class="scrollup">
-        <span class="fa fa-chevron-up"></span>
-    </div>
-</div>
-<!-- / END SCROOL UP DESIGN AREA -->
-<!-- LATEST JQUERY -->
-<script src="assets/js/jquery.min.js"></script>
-<!-- BOOTSTRAP JS -->
-<script src="assets/js/bootstrap.min.js"></script>
-<!-- OWL CAROUSEL JS  -->
-<script src="assets/owlcarousel/js/owl.carousel.mini.js"></script>
-<!-- MAGNIFICANT JS -->
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<!-- STEALLER JS -->
-<script src="assets/js/jquery.stellar.min.js"></script>
-<!-- MAGNIFICANT JS -->
-<script src="assets/js/isotope.min.js"></script>
-<!--Image Loded JS-->
-<script src="assets/js/images-loded.min.js"></script>
-<!-- WOW JS -->
-<script src="assets/js/wow.min.js"></script>
-<!-- CONTCAT FORM JS -->
-<script src="assets/js/form-contact.js"></script>
-<script src="assets/js/venobox.min.js"></script>
-<!-- scripts js -->
-<script src="assets/js/scripts.js"></script>  
-<script src="booking-form/scripts.js" type="text/javascript"></script>
-<script type="text/javascript">
+        <!-- / END SCROOL UP DESIGN AREA -->
+        <!-- LATEST JQUERY -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- BOOTSTRAP JS -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+        <!-- OWL CAROUSEL JS  -->
+        <script src="assets/owlcarousel/js/owl.carousel.mini.js"></script>
+        <!-- MAGNIFICANT JS -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- STEALLER JS -->
+        <script src="assets/js/jquery.stellar.min.js"></script>
+        <!-- MAGNIFICANT JS -->
+        <script src="assets/js/isotope.min.js"></script>
+        <!--Image Loded JS-->
+        <script src="assets/js/images-loded.min.js"></script>
+        <!-- WOW JS -->
+        <script src="assets/js/wow.min.js"></script>
+        <!-- CONTCAT FORM JS -->
+        <script src="assets/js/form-contact.js"></script>
+        <script src="assets/js/venobox.min.js"></script>
+        <!-- scripts js -->
+        <script src="assets/js/scripts.js"></script>  
+        <script src="booking-form/scripts.js" type="text/javascript"></script>
+        <script type="text/javascript">
             function googleTranslateElementInit() {
                 new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element'); //remove the layout
             }
@@ -271,33 +282,65 @@ include 'footer.php';
 
 
         <script type="text/javascript">
-                    function triggerHtmlEvent(element, eventName) {
-                        var event;
-                        if (document.createEvent) {
-                            event = document.createEvent('HTMLEvents');
-                            event.initEvent(eventName, true, true);
-                            element.dispatchEvent(event);
-                        } else {
-                            event = document.createEventObject();
-                            event.eventType = eventName;
-                            element.fireEvent('on' + event.eventType, event);
-                        }
-                    }
-        <!-- Flag click handler -->
-                    $('.translation-links a').click(function (e) {
-                        e.preventDefault();
-                        var lang = $(this).data('lang');
-                        $('#google_translate_element select option').each(function () {
-                            if ($(this).text().indexOf(lang) > -1) {
+            function triggerHtmlEvent(element, eventName) {
+                var event;
+                if (document.createEvent) {
+                    event = document.createEvent('HTMLEvents');
+                    event.initEvent(eventName, true, true);
+                    element.dispatchEvent(event);
+                } else {
+                    event = document.createEventObject();
+                    event.eventType = eventName;
+                element.fireEvent('on' + event.eventType, event);
+            }
+        }
+<!-- Flag click handler -->
+            $('.translation-links a').click(function (e) {
+                    e.preventDefault();
+            var lang = $(this).data('lang');
+                    $('#google_translate_element select option').each(function () {
+            if ($(this).text().indexOf(lang) > -1) {
                                 $(this).parent().val($(this).val());
                                 var container = document.getElementById('google_translate_element');
                                 var select = container.getElementsByTagName('select')[0];
-                                triggerHtmlEvent(select, 'change');
-                            }
-                        });
-                    });
+                                triggerHtmlEvent(select, 'change            ');
+                      }
+            });
+            });
 
-        </script>
-</body>
+       </script>
+            <script src="js/jque            ry.datetimepicker.full.min.js" type="text/javascript"></script>
+
+            <script type="text/javascript">
+
+            $(function () {
+
+                /* global setting */
+                var datepickersOpt = {
+                        dateFormat: 'yy-mm-dd',
+                        minDate: 0
+        }
+        
+        $("#txtAdate").datepicker($.extend({
+                        onSelect: function () {
+                                var minDate = $(this).datepicker('getDate');
+                                minDate.setDate(minDate.getDate() + 1); //add two days
+                                $("#txtDdate").datepicker("option", "minDate", minDate);
+        },
+        dateFormat: 'yyyy-mm-dd'
+        }, datepickersOpt));
+        
+        $("#txtDdate").datepicker($.extend({
+                                onSelect: function () {
+                                    var maxDate = $(this).datepicker('getDate');
+                                    maxDate.setDate(maxDate.getDate() - 1);
+                                    $("#txtAdate").datepicker("option", "maxDate", maxDate);
+                            },
+                            dateFormat: 'yyyy-mm-dd'
+                            }, datepickersOpt));
+                            });
+                        
+            </script>
+        </b        ody>
 
 </html>

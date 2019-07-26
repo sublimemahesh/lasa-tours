@@ -11,11 +11,11 @@ $ATTRACTIONS = new Attraction($id);
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="TravelCo - Travel Agency Bootstrap Template">
-        <meta name="keywords" content="new, html, bootstrap, new html template, design, creative, clean, modern">
-        <meta name="author" content="Nauman Anwar">
+        <meta name="description" content="<?php echo $ATTRACTIONS->short_description; ?>, Sri Lanka Lasa Tours is Reputable and trustworthy holiday partner in Sri Lanka. You can plan your dream vacation the way you want it to be with our Lasa Tours package options. Our chauffeurs are specialist in Russian languages.">
+        <meta name="keywords" content="<?php echo $ATTRACTIONS->title; ?>, sri lanka round tours, one day tours, tour arrangement, sri lanka lasa tours, lasa tours tour packages, about sri lanka lasa tours, best tour guide in sri lanka,  ">
+        <meta name="author" content="Synotec Holdings">
         <!-- PAGE TITLE -->
-        <title>Destination - <?php echo $ATTRACTIONS->title ?></title>
+        <title>Destination - <?php echo $ATTRACTIONS->title ?> | Sri Lanka Lasa Tours</title>
         <!-- BOOTSTRAP CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <!-- ALL GOOGLE FONTS -->
@@ -41,7 +41,7 @@ $ATTRACTIONS = new Attraction($id);
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" type="text/css" href="assets/css/media-queries.css">
         <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        
+
     </head>
 
     <body>
