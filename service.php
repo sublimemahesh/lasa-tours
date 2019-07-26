@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 include './class/include.php';
+$SERVICE = new Service(NULL);
 ?>
 <html lang="en">
 
@@ -9,11 +10,11 @@ include './class/include.php';
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="TravelCo - Travel Agency Bootstrap Template">
-        <meta name="keywords" content=" new, html, bootstrap, new html template, design, creative, clean, modern">
-        <meta name="author" content="Nauman Anwar">
+        <meta name="description" content="Sri Lanka Lasa Tours is Reputable and trustworthy holiday partner in Sri Lanka. You can plan your dream vacation the way you want it to be with our Lasa Tours package options. Our chauffeurs are specialist in Russian languages.">
+        <meta name="keywords" content="<?php echo $SERVICE->title;?>, sri lanka round tours, one day tours, tour arrangement, sri lanka lasa tours, lasa tours tour packages, about sri lanka lasa tours, best tour guide in sri lanka,  ">
+        <meta name="author" content="Synotec Holdings">
         <!-- PAGE TITLE -->
-        <title>Service</title>
+        <title>Service | Sri Lanka Lasa Tours</title>
         <!-- BOOTSTRAP CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <!-- ALL GOOGLE FONTS -->
@@ -42,11 +43,11 @@ include './class/include.php';
         <!-- RESPONSIVE CSS -->
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" type="text/css" href="assets/css/media-queries.css">
-   <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="slider/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>
-        
+
         <!-- START HEADER AREA -->
         <?php
         include 'header.php';
@@ -80,26 +81,26 @@ include './class/include.php';
                             <div class="cruises-info cruise-list-view">
                                 <div class="row">
                                     <div class="col-md-4 padding-left-0">
-                                        <img alt="<?php echo $service['title']?>" src="upload/service/thumb/<?php echo $service['image_name']?>">
+                                        <img alt="<?php echo $service['title'] ?>" src="upload/service/thumb/<?php echo $service['image_name'] ?>">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="cruise-details"> 
-                                            <h4 class="cruise-title"><?php echo $service['title']?></h4> 
-                                            <div class="cruise-content"> <?php echo $service['short_description']?></div>
-                                           
+                                            <h4 class="cruise-title"><?php echo $service['title'] ?></h4> 
+                                            <div class="cruise-content"> <?php echo $service['short_description'] ?></div>
+
                                         </div>
                                     </div>
                                 </div>
                             </div> 
                         </div>
-                    <?php }?>
-                    </div>
+                    <?php } ?>
                 </div>
-            </section>
-            <!-- START SERVICE DESIGN AREA -->
-            <?php
-            include 'footer.php';
-            ?>
+            </div>
+        </section>
+        <!-- START SERVICE DESIGN AREA -->
+        <?php
+        include 'footer.php';
+        ?>
         <!-- / END CONTACT DETAILS DESIGN AREA -->
         <!-- START SCROOL UP DESIGN AREA -->
         <div class="scroll-to-up">
@@ -136,35 +137,34 @@ include './class/include.php';
                 new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element'); //remove the layout
             }
         </script>
-        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 
 
-        <script type="text/javascript">
-                    function triggerHtmlEvent(element, eventName) {
-                        var event;
-                        if (document.createEvent) {
-                            event = document.createEvent('HTMLEvents');
-                            event.initEvent(eventName, true, true);
-                            element.dispatchEvent(event);
-                        } else {
-                            event = document.createEventObject();
-                            event.eventType = eventName;
-                            element.fireEvent('on' + event.eventType, event);
-                        }
+                <script type="text/javascript">
+            function triggerHtmlEvent(element, eventName) {
+            var event;                 if (document.createEvent) {
+            event = document.createEvent('HTMLEvents');
+        event.initEvent(eventName, true, true);
+            element.dispatchEvent(event);
+        } else {
+            event = document.createEventObject();
+            event.eventType = eventName;
+        element.fireEvent('on' + event.eventType, event);
+    }
+}
+<!-- Flag click handler -->
+$('.translation-links a').click(function (e) {
+          e.preventDefault();
+                var lang = $(this).data('lang');
+                $('#google_translate_element select option').each(function () {
+                    if ($(this).text().indexOf(lang) > -1) {
+                        $(this).parent().val($(this).val());
+                        var container = document.getElementById('google_translate_element');
+                        var select = container.getElementsByTagName('select')[0];
+                        triggerHtmlEvent(select, 'change');
                     }
-        <!-- Flag click handler -->
-                    $('.translation-links a').click(function (e) {
-                        e.preventDefault();
-                        var lang = $(this).data('lang');
-                        $('#google_translate_element select option').each(function () {
-                            if ($(this).text().indexOf(lang) > -1) {
-                                $(this).parent().val($(this).val());
-                                var container = document.getElementById('google_translate_element');
-                                var select = container.getElementsByTagName('select')[0];
-                                triggerHtmlEvent(select, 'change');
-                            }
-                        });
-                    });
+                });
+            });
 
         </script>
     </body>
