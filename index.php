@@ -9,11 +9,12 @@ $ABOUT_US = new Page(1);
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="TravelCo - Travel Agency Bootstrap Template">
-        <meta name="keywords" content=" new, html, bootstrap, new html template, design, creative, clean, modern">
-        <meta name="author" content="Nauman Anwar">
+        <title>SRILANKA TOUR GUIDE | TOUR DRIVER SRILANKA</title>
+        <meta name="keywords" content=" private driver srilanka, srilanka budget tour drivers, srilankan tour guides, travel srilanka, best tour drivers in srilanka, srilanka tour packages, tours in srilanka, srilanka round tours, srilanka day tours">
+        <meta name="description" content="Warmly welcome Sri Lanka Lasa Tours. We are Specialized in foreign languages (Russian). We are a tour arrangement company, a dedicated to ensure you a smooth stay in Sri Lanka.">
+        <meta name="author" content="Synotec Holdings">
         <!-- PAGE TITLE -->
-        <title>Home</title>
+
         <!-- BOOTSTRAP CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <!-- ALL GOOGLE FONTS -->
@@ -51,7 +52,7 @@ $ABOUT_US = new Page(1);
 
         <!-- START HEADER AREA -->
         <?php
-        include './header-index.php';
+        include './header.php';
         ?>
         <!-- / END HEADER AREA -->
 
@@ -483,7 +484,7 @@ $ABOUT_US = new Page(1);
 
 
         </script>
-       <script type="text/javascript">
+        <script type="text/javascript">
             function googleTranslateElementInit() {
                 new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element'); //remove the layout
             }
@@ -492,31 +493,31 @@ $ABOUT_US = new Page(1);
 
 
         <script type="text/javascript">
-                    function triggerHtmlEvent(element, eventName) {
-                        var event;
-                        if (document.createEvent) {
-                            event = document.createEvent('HTMLEvents');
-                            event.initEvent(eventName, true, true);
-                            element.dispatchEvent(event);
-                        } else {
-                            event = document.createEventObject();
-                            event.eventType = eventName;
-                            element.fireEvent('on' + event.eventType, event);
-                        }
-                    }
-        <!-- Flag click handler -->
-                    $('.translation-links a').click(function (e) {
-                        e.preventDefault();
-                        var lang = $(this).data('lang');
-                        $('#google_translate_element select option').each(function () {
-                            if ($(this).text().indexOf(lang) > -1) {
-                                $(this).parent().val($(this).val());
-                                var container = document.getElementById('google_translate_element');
-                                var select = container.getElementsByTagName('select')[0];
-                                triggerHtmlEvent(select, 'change');
-                            }
-                        });
-                    });
+     function triggerHtmlEvent(element, eventName) {
+     var event;
+         if (document.createEvent) {
+             event = document.createEvent('HTMLEvents');
+             event.initEvent(eventName, true, true);
+             element.dispatchEvent(event);
+         } else {
+             event = document.createEventObject();
+           
+         event.eventType = eventName;                     element.fireEvent('on' + event.eventType, event);
+     }
+     }
+                                 <!-- Flag click handler -->
+                             $('.translation-links a').click(function (e) {
+             e.preventDefault();
+     var lang = $(this).data('lang');
+$('#google_translate_element select option').each(function () {
+              if ($(this).text().indexOf(lang) > -1) {
+                  $(this).parent().val($(this).val());
+                  var container = document.getElementById('google_translate_element');
+                  var select = container.getElementsByTagName('select')[0];
+                  triggerHtmlEvent(select, 'change');
+              }
+          });
+      });
 
         </script>
     </body>

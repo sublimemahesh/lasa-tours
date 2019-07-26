@@ -19,7 +19,7 @@
                                 </a></li>
                             <li><a href="https://www.instagram.com/Tour_in_sri_lanka"><i class="fa fa-instagram"></i> </a></li>
                             <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i> </a></li>
-                            <li><a href="#"><i class="fa fa-tripadvisor"></i> </a></li>
+                            <li><a href="https://www.tripadvisor.com/17790614"><i class="fa fa-tripadvisor"></i> </a></li>
                             <li>  <a href="booking.php" class="color-black inq"> INQUIRY NOW </a></li>
                         </ul>
                     </div>
@@ -82,15 +82,18 @@
                                         <li><a href="service.php">Service <span class="caret"></span></a>
                                         </li>
                                         <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Tours<span class="caret"></span></a>
-                                            <ul class=" dropdown-menu">
+                                            <ul class="dropdown-menu">
                                                 <?php
                                                 $TOUR_TYPE = new TourType(NULL);
                                                 foreach ($TOUR_TYPE->all() as $tour_type) {
                                                     ?>
-                                                    <li><a href="tours.php?id=<?php echo $tour_type['id'] ?>"><?php echo $tour_type['name'] ?></a></li>
+                                                    <li class="mobile-tour-links"><a href="tours.php?id=<?php echo $tour_type['id'] ?>"><?php echo $tour_type['name'] ?></a></li>
                                                 <?php } ?>
                                             </ul>
                                         </li>
+                                       
+                                        
+
                                         <li><a href="things-to-do.php">Things to Do <span class="caret"></span></a>
                                         </li>
                                         <li><a href="destinations.php">Destinations <span class="caret"></span></a>
@@ -114,24 +117,23 @@
     </div>
 </header>
 
-<div class="mobile-flags-container" style="position: absolute;width:100%">
-
+<div class="mobile-flags-container" style="margin-top: 4px;  position: absolute;
+     width:100%">
     <ul class="top-bar-mobile translation-links">
-        <li style="text-align: right;margin-right: 8px;">
-           <a href="#" class="russian " data-lang="Russian"><img src="assets/img/003-russia.png" alt=""/></a>
+        <li style="text-align: right;margin-right: 15px;">
+            <a href="#" class="russian " data-lang="Russian"><img src="assets/img/003-russia.png" alt=""/></a>
         </li> 
         <li>
-          <a href="#" class="united kingdom n" data-lang="English"><img src="assets/img/001-united-kingdom.png" alt=""/>
+            <a href="#" class="united kingdom n" data-lang="English"><img src="assets/img/001-united-kingdom.png" alt=""/>
         </li>
 
     </ul>
-  
-    <ul class="top-bar-mobile-phone">
+    <ul class="top-bar-mobile-email">
         <li style="text-align: right;margin-right: 8px; font-weight: 500;">
-              <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:(+94) 77 688 1171">(+94) 77 688 1171</a>
+            <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:(+94) 77 688 1171">(+94) 77 688 1171</a>
         </li> 
-
-
     </ul>
 </div>
+
+
 
