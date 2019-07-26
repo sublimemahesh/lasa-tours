@@ -16033,7 +16033,7 @@ footer, header, hgroup, main, menu, nav, section, summary {
     margin-top: 10px;
 }
 .navbar-nav .dropdown-menu {
-    position: absolute;
+/*    position: absolute;*/
     float: none;
 }
 .ind-shoptoggle{top: 0;}

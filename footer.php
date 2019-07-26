@@ -70,7 +70,7 @@
                     <a class="" target="_blank" href="viber://chat?number=94776881171"><img class="footer-contact-imgs" src="assets/images/social/002-viber.png"></i></a>
                     <a class="" target="_blank" href="https://www.instagram.com/Tour_in_sri_lanka"><img class="footer-contact-imgs" src="assets/images/social/003-instagram.png"></i></a>
                     <a class="" target="_blank" href="https://www.facebook.com/"><img class="footer-contact-imgs" src="assets/images/social/004-facebook.png"></i></a>
-
+                    <a class="" target="_blank" href="https://www.tripadvisor.com/17790614"><img class="footer-contact-imgs" src="assets/images/social/tripadvisor.png"></i></a>
                 </div>
             </div>
             <!-- third block -->
@@ -116,5 +116,5 @@
         </div>
     </div>
 </footer>
- 
+
 

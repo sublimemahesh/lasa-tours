@@ -117,7 +117,7 @@
 <div class="mobile-flags-container" style="   position: absolute;
      width:100%">
     <ul class="top-bar-mobile translation-links">
-        <li style="text-align: right;margin-right: 8px;">
+        <li style="text-align: right;margin-right: 15px;">
            <a href="#" class="russian " data-lang="Russian"><img src="assets/img/003-russia.png" alt=""/></a>
         </li> 
         <li>
